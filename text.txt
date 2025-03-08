@@ -1,0 +1,38 @@
+real-estate-website/
+│
+├── index.html               # Homepage
+├── about.html               # About page
+├── properties.html          # Property listings
+├── property-details.html    # Single property page
+├── contact.html             # Contact page
+├── blog.html                # Blog listing
+│
+├── assets/                  # All static assets
+│   ├── css/                 # Stylesheets
+│   │   ├── main.css         # Main stylesheet
+│   │   ├── responsive.css   # Responsive styles
+│   │   └── components/      # Component-specific styles
+│   │
+│   ├── js/                  # JavaScript files
+│   │   ├── main.js          # Main JavaScript file
+│   │   ├── property-filter.js   # Property filtering functionality
+│   │   └── components/      # Component-specific scripts
+│   │
+│   ├── images/              # Image files
+│   │   ├── properties/      # Property images
+│   │   ├── team/            # Team member photos
+│   │   ├── logo.png         # Logo
+│   │   └── backgrounds/     # Background images
+│   │
+│   └── fonts/               # Custom fonts
+│
+├── components/              # Reusable HTML components
+│   ├── header.html          # Header component
+│   ├── footer.html          # Footer component
+│   ├── property-card.html   # Property card component
+│   └── contact-form.html    # Contact form component
+│
+└── admin/                   # Admin area (if needed)
+    ├── login.html           # Admin login
+    ├── dashboard.html       # Admin dashboard
+    └── property-editor.html # Property editing interface

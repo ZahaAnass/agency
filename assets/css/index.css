@@ -1,0 +1,39 @@
+/* body {
+    height: 1000vh;
+} */
+:root{
+    --primary-color: #E74C3C;
+}
+.navbar{
+    background-color: var(--primary-color) !important;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/villa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.our-service{
+    background: lightgray;
+}
+.icon{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 60px;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.our-service .card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 300px;
+}
+.comment .card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+    line-height: 2.5rem;
+}

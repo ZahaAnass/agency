@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Properties - Real Estate Agency</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .logo span {
+            color: #e74c3c;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #e74c3c;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/1200/700') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding-top: 70px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #c0392b;
+        }
+        
+        /* Featured Properties */
+        .featured {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .section-title p {
+            color: #7f8c8d;
+        }
+        
+        .properties {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .property-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .property-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .property-image {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .property-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .property-info {
+            padding: 20px;
+        }
+        
+        .property-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+        
+        .property-address {
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        
+        .property-details {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #ecf0f1;
+            padding-top: 15px;
+        }
+        
+        .property-detail {
+            text-align: center;
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: #f9f9f9;
+            padding: 80px 0;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .service-icon {
+            font-size: 48px;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+        }
+        
+        .testimonial-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        .testimonial-author {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        
+        .footer-column p, .footer-column a {
+            color: #bdc3c7;
+            margin-bottom: 10px;
+            display: block;
+            text-decoration: none;
+        }
+        
+        .footer-column a:hover {
+            color: #e74c3c;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            color: #bdc3c7;
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+        }
+        
+        /* About Page */
+        .about-section {
+            padding: 120px 0 80px;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .about-text h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .about-text p {
+            margin-bottom: 15px;
+        }
+        
+        .team-section {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .team-member {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        
+        .team-member-image {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .team-member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .team-member-info {
+            padding: 20px;
+        }
+        
+        .team-member-info h3 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .team-member-position {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        /* Property Listing Page */
+        .listing-page {
+            padding: 120px 0 80px;
+        }
+        
+        .filters {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        .filter-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .filter-group {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .filter-group select, .filter-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        /* Property Details Page */
+        .property-details-page {
+            padding: 120px 0 80px;
+        }
+        
+        .property-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .property-title h1 {
+            font-size: 36px;
+            color: #2c3e50;
+        }
+        
+        .property-main-details {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        
+        .property-gallery {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .main-image {
+            height: 400px;
+        }
+        
+        .main-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .thumbnail {
+            height: 80px;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .property-sidebar {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+        
+        .agent-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .agent-image {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        
+        .agent-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .agent-contact-btn {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .property-description {
+            margin-top: 30px;
+        }
+        
+        .property-description h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .features-list {
+            margin: 30px 0;
+        }
+        
+        .features-list h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-icon {
+            margin-right: 10px;
+            color: #e74c3c;
+        }
+        
+        .map-section {
+            margin: 30px 0;
+        }
+        
+        .map-section h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .map-container {
+            height: 400px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7f8c8d;
+        }
+        
+        /* Contact Page */
+        .contact-page {
+            padding: 120px 0 80px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .contact-info {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .contact-info h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #e74c3c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            margin-right: 15px;
+        }
+        
+        .office-hours {
+            margin-top: 30px;
+        }
+        
+        .office-hours h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .hours-table {
+            width: 100%;
+        }
+        
+        .hours-table tr {
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .hours-table td {
+            padding: 10px 0;
+        }
+        
+        .hours-table td:last-child {
+            text-align: right;
+        }
+        
+        /* Blog Page */
+        .blog-page {
+            padding: 120px 0 80px;
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        
+        .blog-main {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        .blog-post {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .blog-image {
+            height: 300px;
+        }
+        
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .blog-content {
+            padding: 20px;
+        }
+        
+        .blog-meta {
+            display: flex;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        
+        .blog-meta div {
+            margin-right: 20px;
+        }
+        
+        .blog-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .blog-excerpt {
+            margin-bottom: 15px;
+        }
+        
+        .blog-sidebar {
+            height: fit-content;
+        }
+        
+        .sidebar-widget {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        .sidebar-widget h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+        
+        .recent-posts-list {
+            list-style: none;
+        }
+        
+        .recent-posts-list li {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 15px;
+        }
+        
+        .recent-posts-list li:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        .tags-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .tag {
+            background-color: #f5f5f5;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #7f8c8d;
+            text-decoration: none;
+        }
+        
+        .tag:hover {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .property-main-details,
+            .about-content,
+            .contact-grid,
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            .logo {
+                margin-bottom: 20px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+                margin-left: 0;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Premier<span>Properties</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Home Page) -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find Your Dream Home With Us</h1>
+                <p>Premier Properties offers exclusive real estate opportunities in the most desirable locations. Our expert agents will guide you through the entire process.</p>
+                <a href="#properties" class="btn">View Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties (Home Page) -->
+    <section id="properties" class="featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Properties</h2>
+                <p>Handpicked properties that match your lifestyle</p>
+            </div>
+            <div class="properties">
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="/api/placeholder/800/600" alt="Luxury Villa">
+                    </div>
+                    <div class="property-info">
+                        <div class="property-price">$1,250,000</div>
+                        <h3>Luxury Waterfront Villa</h3>
+                        <div class="property-address">123 Lakeview Dr, Beverly Hills</div>
+                        <div class="property-details">
+                            <div class="property-detail">
+                                <div>4</div>
+                                <div>Bedrooms</div>
+                            </div>
+                            <div class="property-detail">
+                                <div>3</div>
+                                <div>Bathrooms</div>
+                            </div>
+                            <div class="property-detail">
+                                <div>3,500</div>
+                                <div>Sq Ft</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="/api/placeholder/800/600" alt="Modern Apartment">
+                    </div>
+                    <div class="property-info">
+                        <div class="property-price">$750,000</div>
+                        <h3>Modern Downtown Apartment</h3>
+                        <div class="property-address">456 Central Ave, Downtown</div>
+                        <div class="property-details">
+                            <div class="property-detail">
+                                <div>2</div>
+                                <div>Bedrooms</div>
+                            </div>
+                            <div class="property-detail">
+                                <div>2</div>
+                                <div>Bathrooms</div>
+                            </div>
+                            <div class="property-detail">
+                                <div>1,800</div>
+                                <div>Sq Ft</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="/api/placeholder/800/600" alt="Family Home">
+                    </div>
+                    <div class="property-info">
+                        <div class="property-price">$950,000</div>
+                        <h3>Spacious Family Home</h3>
+                        <div class="property-address">789 Oak Street, West Hills</div>
+                        <div class="property-details">
+                            <div class="property-detail">
+                                <div>5</div>
+                                <div>Bedrooms</div>
+                            </div>
+                            <div class="property-detail">
+                                <div>4</div>
+                                <div>Bathrooms</div>
+                            </div>
+                            <div class="property-detail">
+                                <div>4,200</div>
+                                <div>Sq Ft</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Home Page) -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Comprehensive real estate solutions for every need</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Property Sales</h3>
+                    <p>Our expert agents will help you sell your property at the best possible price with a strategic marketing approach.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Property Search</h3>
+                    <p>Looking for a new home? We'll find the perfect property that matches your requirements and budget.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Market Analysis</h3>
+                    <p>Get detailed insights about the current real estate market to make informed decisions for buying or selling.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Commercial Properties</h3>
+                    <p>We handle all types of commercial real estate transactions, from office spaces to retail locations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials (Home Page) -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>Read testimonials from our satisfied clients</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Premier Properties made finding our dream home an absolute pleasure. Their team was attentive, professional, and genuinely cared about our needs. We couldn't be happier with our new home!"</p>
+                <p class="testimonial-author">- James & Sarah Thompson</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="about-section" style="display: none;">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/api/placeholder/600/600" alt="Premier Properties Team">
+                </div>
+                <div class="about-text">
+                    <h2>About Premier Properties</h2>
+                    <p>Founded in 2005, Premier Properties has established itself as a leading real estate agency, dedicated to helping clients find their perfect homes and investments.</p>
+                    <p>Our mission is to provide exceptional service through honesty, integrity, and a deep understanding of the real estate market. We believe in building long-term relationships with our clients by exceeding their expectations and delivering results.</p>
+                    <p>With a team of highly experienced professionals, we offer comprehensive real estate services tailored to meet the unique needs of each client. Whether you're buying, selling, or investing, we're here to guide you every step of the way.</p>
+                    <a href="#contact" class="btn">Connect With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section (About Page) -->
+    <section class="team-section" style="display: none;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Team</h2>
+                <p>Our dedicated professionals are here to help you</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="/api/placeholder/400/400" alt="John Smith">
+                    </div>
+                    <div class="team-member-info">
+                        <h3>John Smith</h3>
+                        <div class="team-member-position">CEO & Founder</div>
+                        <p>With over 20 years of experience in real estate, John has built Premier Properties on a foundation of trust and excellence.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="/api/placeholder/400/400" alt="Emily Johnson">
+                    </div>
+                    <div class="team-member-info">
+                        <h3>Emily Johnson</h3>
+                        <div class="team-member-position">Senior Agent</div>
+                        <p>Emily specializes in luxury properties and has consistently been a top-performing agent for the past 10 years.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="/api/placeholder/400/400" alt="Michael Chen">
+                    </div>
+                    <div class="team-member-info">
+                        <h3>Michael Chen</h3>
+                        <div class="team-member-position">Marketing Director</div>
+                        <p>Michael brings innovative marketing strategies that help our clients' properties stand out in a competitive market.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="/api/placeholder/400/400" alt="Sarah Williams">
+                    </div>
+                    <div class="team-member-info">
+                        <h3>Sarah Williams</h3>
+                        <div class="team-member-position">Client Relations</div>
+                        <p>Sarah ensures that every client receives personalized attention and support throughout their real estate journey.</p>
+                    </div>
+                </div
