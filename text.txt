@@ -36,3 +36,29 @@ real-estate-website/
     ├── login.html           # Admin login
     ├── dashboard.html       # Admin dashboard
     └── property-editor.html # Property editing interface
+
+À propos de nous
+
+Votre partenaire de confiance pour toutes vos transactions immobilières. Nous vous aidons à trouver la propriété idéale ou à vendre votre bien au meilleur prix.
+
+Liens Rapides
+
+Maison
+
+À propos
+
+Services
+
+Contact
+
+Contact
+
+• 123 Rue Principale, 75001 Paris
+
++33 123 45 67 89
+
+info@agenceimmobilier.com
+
+dans
+
+© 2025 Agence d'immobilier. Tous droits réservés.
