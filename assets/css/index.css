@@ -40,6 +40,10 @@ main {
     font-size: 2rem;
     color: #E74C3C;
 }
+.feature-box .card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 .our-service .card{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
