@@ -1,0 +1,46 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63vh;
+    background-image: url(../images/villa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.history img{
+    width: 70%;
+}
+.card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.nos-valuer{
+    background: lightgray;
+}
+.nos-valuer .card{
+    overflow: hidden;
+}
+.nos-valuer .card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 300px;
+}
+.icon{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 60px;
+    font-size: 2rem;
+}
+.facebook{
+    background-color: #1877f2;
+}
+.twitter{
+    background-color: #1da1f2;
+}
+.linkedin{
+    background-color: #0a66c2;
+}
+.youtube{
+    background-color: #ff0000;
+}
+/* .equipe */
