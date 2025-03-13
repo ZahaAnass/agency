@@ -1,26 +1,6 @@
 /* body {
     height: 1000vh;
 } */
-:root{
-    --primary-color: #19283f;
-}
-.header .nav-links{
-    color: white !important;
-}
-.header .nav-links:hover{
-    color: #E74C3C !important;
-}
-.header .nav-links.active{
-    color: #E74C3C !important;
-}
-.header .navbar-toggler{
-    color: white;
-    font-size: 25px;
-    border-color: white;
-}
-.navbar{
-    background-color: var(--primary-color) !important;
-}
 main {
     display: flex;
     justify-content: center;
@@ -57,26 +37,4 @@ main {
 }
 .our-service .card{
     overflow: hidden;
-}
-.footer{
-    background-color: var(--primary-color);
-    color: white;
-}
-.footer .facebook{
-    background-color: #1877f2;
-}
-.footer .twitter{
-    background-color: #1da1f2;
-}
-.footer .linkedin{
-    background-color: #0a66c2;
-}
-.footer .youtube{
-    background-color: #ff0000;
-}
-.footer .links{
-    text-decoration: none !important;
-}
-.footer .links a{
-    line-height: 2rem;
 }
