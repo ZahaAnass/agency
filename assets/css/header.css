@@ -1,6 +1,22 @@
 :root{
     --primary-color: #19283f;
 }
+::-webkit-scrollbar{
+    width: 10px;/*width of scroolbar*/
+}
+/* thumb is moving part */
+::-webkit-scrollbar-thumb{
+    background-color: #3498db;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #2980b9;
+    cursor: pointer;
+}
+/* Scrollbar background */
+::-webkit-scrollbar-track{
+    background-color: var(--primary-color);
+}
 .navbar{
     background-color: var(--primary-color) !important;
 }
