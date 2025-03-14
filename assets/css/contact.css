@@ -1,0 +1,46 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    background-image: url(../images/villa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.icons{
+    line-height: 1.2rem;
+}
+.icons span{
+    transform: translateY(-15px);
+}
+.location{
+    color: #3498db;
+    background-color: #ecf0f1;
+}
+.phone{
+    color: #2ecc71;
+    background-color: #f9f9f9;
+}
+.email{
+    color: #e74c3c;
+    background-color: #f5f5f5;
+}
+.clock{
+    color: #333333;
+    background-color: #f5f5f5;
+}
+.contact ul li a {
+    color: white;
+}
+.facebook{
+    background-color: #1877f2;
+}
+.twitter{
+    background-color: #1da1f2;
+}
+.linkedin{
+    background-color: #0a66c2;
+}
+.youtube{
+    background-color: #ff0000;
+}
