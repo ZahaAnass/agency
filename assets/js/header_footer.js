@@ -18,6 +18,8 @@ class SpecialFooter extends HTMLElement {
                             <li><a href="about.html" class="text-white-50">A propos</a></li>
                             <li><a href="properties.html" class="text-white-50">Services</a></li>
                             <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                            <li><a href="login.html" class="text-white-50">Login</a></li>
+                            <li><a href="signup.html" class="text-white-50">Signup</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">
