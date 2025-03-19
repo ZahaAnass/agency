@@ -17,6 +17,16 @@
 ::-webkit-scrollbar-track{
     background-color: var(--primary-color);
 }
+:root{
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --green-color: #33d1cc;
+}
+.main-btn-red{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
 .navbar{
     background-color: var(--primary-color) !important;
 }
@@ -24,10 +34,17 @@
     color: white !important;
 }
 .header .nav-links:hover{
-    color: #E74C3C !important;
+    color: var(--red-color) !important;
 }
 .header .nav-links.active{
-    color: #E74C3C !important;
+    color: var(--red-color) !important;
+}
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+    padding: 10px;
+}
+.navbar .search svg{
+    color: var(--green-color);
 }
 .header .navbar-toggler{
     color: white;

@@ -79,18 +79,23 @@ class SpecialHeader extends HTMLElement {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
+                            <li class="nav-item me-4">
                                 <a class="nav-link nav-links ${currentPage === 'index.html' ? 'active' : ''}" href="index.html">Home</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item me-4">
                                 <a class="nav-link nav-links ${currentPage === 'about.html' ? 'active' : ''}" href="about.html">About</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item me-4">
                                 <a class="nav-link nav-links ${currentPage === 'services.html' ? 'active' : ''}" href="services.html">Services</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item me-4">
                                 <a class="nav-link nav-links ${currentPage === 'contact.html' ? 'active' : ''}" href="contact.html">Contact</a>
                             </li>
+                            <div class="search ps-3 pe-3 d-none d-lg-block">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                                <a href="login.html" class="btn rounded-pill main-btn-red">Login</a>
+                            </div>
                         </ul>
                     </div>
                 </div>
