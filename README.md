@@ -5,10 +5,12 @@
 ├── assets
     ├── css
     │   ├── about.css
+    │   ├── blog.css
     │   ├── bootstrap
     │   │   ├── bootstrap.min.css
     │   │   └── bootstrap.min.css.map
     │   ├── contact.css
+    │   ├── faq.css
     │   ├── footer.css
     │   ├── header.css
     │   ├── index.css
@@ -27,7 +29,9 @@
     │   ├── bootstrap.bundle.min.js.map
     │   ├── header_footer.js
     │   └── login_signup.js
+├── blog.html
 ├── contact.html
+├── faq.html
 ├── index.html
 ├── login.html
 ├── services.html
