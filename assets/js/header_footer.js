@@ -3,7 +3,7 @@ class SpecialFooter extends HTMLElement {
         this.innerHTML = `
         <footer class="footer pt-5 pb-2 ">
             <div class="container">
-                <div class="row ">
+                <div class="row">
                     <div class="col-md-4">
                         <h2 class="pb-2">A propos de nous</h2>
                         <p class="text-white-50">
@@ -11,13 +11,14 @@ class SpecialFooter extends HTMLElement {
                             Nous vous aidons à trouver la propriété idéale ou à vendre votre bien au meilleur prix.
                         </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 ps-md-5">
                         <h2 class="pb-1">Links</h2>
                         <ul class="list-unstyled links">
                             <li><a href="index.html" class="text-white-50">Home</a></li>
                             <li><a href="about.html" class="text-white-50">A propos</a></li>
                             <li><a href="properties.html" class="text-white-50">Services</a></li>
                             <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                            <li><a href="blog.html" class="text-white-50">Blog</a></li>
                             <li><a href="login.html" class="text-white-50">Login</a></li>
                             <li><a href="signup.html" class="text-white-50">Signup</a></li>
                         </ul>
@@ -90,6 +91,9 @@ class SpecialHeader extends HTMLElement {
                             </li>
                             <li class="nav-item me-4">
                                 <a class="nav-link nav-links ${currentPage === 'contact.html' ? 'active' : ''}" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link nav-links ${currentPage === 'blog.html' ? 'active' : ''}" href="blog.html">Blog</a>
                             </li>
                             <div class="search ps-3 pe-3 d-none d-lg-block">
                                 <i class="fa-solid fa-magnifying-glass"></i>
