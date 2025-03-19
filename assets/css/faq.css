@@ -1,0 +1,9 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63vh;
+    background-image: url(../images/villa.jpg);
+    background-size: cover;
+    background-position: center;
+}

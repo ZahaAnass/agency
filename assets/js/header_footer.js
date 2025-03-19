@@ -19,6 +19,7 @@ class SpecialFooter extends HTMLElement {
                             <li><a href="properties.html" class="text-white-50">Services</a></li>
                             <li><a href="contact.html" class="text-white-50">Contact</a></li>
                             <li><a href="blog.html" class="text-white-50">Blog</a></li>
+                            <li><a href="faq.html" class="text-white-50">Faq</a></li>
                             <li><a href="login.html" class="text-white-50">Login</a></li>
                             <li><a href="signup.html" class="text-white-50">Signup</a></li>
                         </ul>
@@ -94,6 +95,9 @@ class SpecialHeader extends HTMLElement {
                             </li>
                             <li class="nav-item me-4">
                                 <a class="nav-link nav-links ${currentPage === 'blog.html' ? 'active' : ''}" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link nav-links ${currentPage === 'faq.html' ? 'active' : ''}" href="faq.html">Faq</a>
                             </li>
                             <div class="search ps-3 pe-3 d-none d-lg-block">
                                 <i class="fa-solid fa-magnifying-glass"></i>
