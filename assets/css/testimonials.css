@@ -1,0 +1,67 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63vh;
+    background-image: url(../images/villa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.my_border{
+    border-left: 3px solid #1da1f2;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+.star-rating {
+    color: #ffc107;
+    margin-top: 0.5rem;
+}
+.more-seccess .col-md-8{
+    margin: 0 auto;
+}
+.testimonial-carousel .carousel-item {
+    padding: 20px 0;
+}
+
+.testimonial-carousel .card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-carousel .card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-carousel .testimonial-text {
+    font-style: italic;
+    line-height: 1.8;
+    position: relative;
+}
+
+.testimonial-carousel .testimonial-text::before,
+.testimonial-carousel .testimonial-text::after {
+    content: '"';
+    font-size: 26px;
+    color: #6c757d;
+}
+
+.testimonial-carousel .carousel-control-next,
+.testimonial-carousel .carousel-control-prev {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    .testimonial-carousel .carousel-item {
+        padding: 10px 0;
+    }
+    
+    .testimonial-carousel .card-body {
+        padding: 2rem !important;
+    }
+}
+.avatar{
+    position: relative;
+    margin: 1rem auto 0 !important;
+}
