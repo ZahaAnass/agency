@@ -76,7 +76,7 @@ class SpecialHeader extends HTMLElement {
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="im-fluid" alt=""></a>
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="img-fluid" alt="logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars"></i>
