@@ -3,7 +3,7 @@ class SpecialFooter extends HTMLElement {
         this.innerHTML = `
         <footer class="footer pt-5 pb-2 ">
             <div class="container">
-                <div class="row">
+                <div class="row">   
                     <div class="col-md-4">
                         <h2 class="pb-2">A propos de nous</h2>
                         <p class="text-white-50">
