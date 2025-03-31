@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agence d'immobilier</title>
+    <title>Real Estate Agency</title>
     <!-- Bootstrap 5 -->
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
     <!-- Font Awesome icons -->
@@ -17,298 +17,106 @@
     <!-- Header/Navbar would go here -->
     <special-header></special-header>
 
-    <main class="landing-page">
-        <div class="main-text text-white-50 text-center">
-            <div class="container">
-                <div class="text-center">
-                    <h1 class="hero-h1">Find Your Dream Home</h1>
-                    <p class="lead">Discover the perfect property that matches your lifestyle and preferences</p>
-                    <div class="search-box">
-                        <form id="property-search">
-                            <div class="row g-3">
-                                <div class="col-md-4">
-                                    <label for="location" class="form-label text-dark">Location</label>
-                                    <select class="form-select" id="location">
-                                        <option value="">All Locations</option>
-                                        <option value="new-york">New York</option>
-                                        <option value="los-angeles">Los Angeles</option>
-                                        <option value="chicago">Chicago</option>
-                                        <option value="miami">Miami</option>
-                                        <option value="seattle">Seattle</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="col-md-4">
-                                    <label for="price-range" class="form-label text-dark">Price Range</label>
-                                    <select class="form-select" id="price-range">
-                                        <option value="">Any Price</option>
-                                        <option value="100000-300000">$100,000 - $300,000</option>
-                                        <option value="300000-500000">$300,000 - $500,000</option>
-                                        <option value="500000-800000">$500,000 - $800,000</option>
-                                        <option value="800000-1000000">$800,000 - $1,000,000</option>
-                                        <option value="1000000+">$1,000,000+</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="col-md-4">
-                                    <label for="property-type" class="form-label text-dark">Property Type</label>
-                                    <select class="form-select" id="property-type">
-                                        <option value="">All Types</option>
-                                        <option value="apartment">Apartment</option>
-                                        <option value="house">House</option>
-                                        <option value="condo">Condo</option>
-                                        <option value="villa">Villa</option>
-                                        <option value="townhouse">Townhouse</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="col-12 mt-4">
-                                    <button type="submit" class="btn btn-primary w-100">Search Properties</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+    <main class="landing-page pt-5 mb-5">
+        <div class="main-text text-white-50">
+            <h1>Our Luxury Properties</h1>
+            <p>Discover our exclusive collection of premium properties in prime locations</p>
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-primary w-100 rounded-pill">Schedule a Viewing</button>
             </div>
         </div>
     </main>
 
-    <!-- Properties Section -->
-    <section class="properties-section pt-5">
+    <div class="search-box mb-5">
         <div class="container">
-            <h2 class="section-title text-center">Featured Properties</h2>
-            
-            <!-- Filter Buttons -->
-            <div class="filters text-center mb-5">
-                <button class="btn filter-btn active" data-filter="all">All</button>
-                <button class="btn filter-btn" data-filter="apartment">Apartments</button>
-                <button class="btn filter-btn" data-filter="house">Houses</button>
-                <button class="btn filter-btn" data-filter="villa">Villas</button>
-                <button class="btn filter-btn" data-filter="condo">Condos</button>
+            <h3 class="text-center mb-4">Find Your Dream Property</h3>
+            <form>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <select class="form-select">
+                            <option selected>Location</option>
+                            <option>Manhattan, NY</option>
+                            <option>Beverly Hills, CA</option>
+                            <option>Miami Beach, FL</option>
+                            <option>Aspen, CO</option>
+                            <option>Chicago, IL</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <select class="form-select">
+                            <option selected>Price Range</option>
+                            <option>$1M - $3M</option>
+                            <option>$3M - $5M</option>
+                            <option>$5M - $10M</option>
+                            <option>$10M+</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <select class="form-select">
+                            <option selected>Property Type</option>
+                            <option>Penthouse</option>
+                            <option>Luxury Estate</option>
+                            <option>Oceanfront Villa</option>
+                            <option>Waterfront Mansion</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <button type="submit" class="btn btn-primary w-100">Search Properties</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="properties-section mb-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Featured Luxury Properties</h2>
+                <p class="text-black-50">Explore our collection of premium properties in prime locations</p>
             </div>
-            
+
+            <div class="filter-buttons text-center mb-4">
+                <button class="btn filter-btn active" data-filter="all">All Properties</button>
+                <button class="btn filter-btn" data-filter="estate">Luxury Estates</button>
+                <button class="btn filter-btn" data-filter="penthouse">Penthouses</button>
+                <button class="btn filter-btn" data-filter="villa">Oceanfront Villas</button>
+            </div>
+
             <div class="row" id="properties-container">
-                <!-- Property 1 -->
-                <div class="col-md-6 col-lg-4 property-item mb-4" data-type="apartment" data-price="450000" data-location="new-york">
-                    <div class="property-card">
-                        <div class="property-image">
-                            <img src="assets/images/villa.jpg" alt="Modern Apartment in New York">
-                            <div class="property-price">$450,000</div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="property-title">Modern Apartment in New York</h5>
-                            <p class="property-location"><i class="fas fa-map-marker-alt me-2"></i>Manhattan, New York</p>
-                            <div class="property-features">
-                                <div class="property-feature">
-                                    <i class="fas fa-bed"></i>
-                                    <span>3 Beds</span>
-                                </div>
-                                <div class="property-feature">
-                                    <i class="fas fa-bath"></i>
-                                    <span>2 Baths</span>
-                                </div>
-                                <div class="property-feature">
-                                    <i class="fas fa-ruler-combined"></i>
-                                    <span>1,200 sqft</span>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <a href="property-details.html?id=1" class="btn btn-outline-primary w-100">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Property 2 -->
-                <div class="col-md-6 col-lg-4 property-item mb-4" data-type="house" data-price="750000" data-location="los-angeles">
-                    <div class="property-card">
-                        <div class="property-image">
-                            <img src="assets/images/villa.jpg" alt="Spacious Family Home">
-                            <div class="property-price">$750,000</div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="property-title">Spacious Family Home</h5>
-                            <p class="property-location"><i class="fas fa-map-marker-alt me-2"></i>Beverly Hills, Los Angeles</p>
-                            <div class="property-features">
-                                <div class="property-feature">
-                                    <i class="fas fa-bed"></i>
-                                    <span>4 Beds</span>
-                                </div>
-                                <div class="property-feature">
-                                    <i class="fas fa-bath"></i>
-                                    <span>3 Baths</span>
-                                </div>
-                                <div class="property-feature">
-                                    <i class="fas fa-ruler-combined"></i>
-                                    <span>2,400 sqft</span>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <a href="property-details.html?id=2" class="btn btn-outline-primary w-100">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Property 3 -->
-                <div class="col-md-6 col-lg-4 property-item mb-4" data-type="villa" data-price="1200000" data-location="miami">
-                    <div class="property-card">
-                        <div class="property-image">
-                            <img src="assets/images/villa.jpg" alt="Luxury Waterfront Villa">
-                            <div class="property-price">$1,200,000</div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="property-title">Luxury Waterfront Villa</h5>
-                            <p class="property-location"><i class="fas fa-map-marker-alt me-2"></i>South Beach, Miami</p>
-                            <div class="property-features">
-                                <div class="property-feature">
-                                    <i class="fas fa-bed"></i>
-                                    <span>5 Beds</span>
-                                </div>
-                                <div class="property-feature">
-                                    <i class="fas fa-bath"></i>
-                                    <span>4 Baths</span>
-                                </div>
-                                <div class="property-feature">
-                                    <i class="fas fa-ruler-combined"></i>
-                                    <span>3,500 sqft</span>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <a href="property-details.html?id=3" class="btn btn-outline-primary w-100">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Property 4 -->
-                <div class="col-md-6 col-lg-4 property-item mb-4" data-type="condo" data-price="520000" data-location="chicago">
-                    <div class="property-card">
-                        <div class="property-image">
-                            <img src="assets/images/villa.jpg" alt="Downtown Luxury Condo">
-                            <div class="property-price">$520,000</div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="property-title">Downtown Luxury Condo</h5>
-                            <p class="property-location"><i class="fas fa-map-marker-alt me-2"></i>Loop, Chicago</p>
-                            <div class="property-features">
-                                <div class="property-feature">
-                                    <i class="fas fa-bed"></i>
-                                    <span>2 Beds</span>
-                                </div>
-                                <div class="property-feature">
-                                    <i class="fas fa-bath"></i>
-                                    <span>2 Baths</span>
-                                </div>
-                                <div class="property-feature">
-                                    <i class="fas fa-ruler-combined"></i>
-                                    <span>1,100 sqft</span>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <a href="property-details.html?id=4" class="btn btn-outline-primary w-100">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Property 5 -->
-                <div class="col-md-6 col-lg-4 property-item mb-4" data-type="house" data-price="680000" data-location="seattle">
-                    <div class="property-card">
-                        <div class="property-image">
-                            <img src="assets/images/villa.jpg" alt="Modern House with Garden">
-                            <div class="property-price">$680,000</div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="property-title">Modern House with Garden</h5>
-                            <p class="property-location"><i class="fas fa-map-marker-alt me-2"></i>Queen Anne, Seattle</p>
-                            <div class="property-features">
-                                <div class="property-feature">
-                                    <i class="fas fa-bed"></i>
-                                    <span>3 Beds</span>
-                                </div>
-                                <div class="property-feature">
-                                    <i class="fas fa-bath"></i>
-                                    <span>2 Baths</span>
-                                </div>
-                                <div class="property-feature">
-                                    <i class="fas fa-ruler-combined"></i>
-                                    <span>1,800 sqft</span>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <a href="property-details.html?id=5" class="btn btn-outline-primary w-100">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Property 6 -->
-                <div class="col-md-6 col-lg-4 property-item mb-4" data-type="apartment" data-price="380000" data-location="new-york">
-                    <div class="property-card">
-                        <div class="property-image">
-                            <img src="assets/images/villa.jpg" alt="Cozy Studio Apartment">
-                            <div class="property-price">$380,000</div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="property-title">Cozy Studio Apartment</h5>
-                            <p class="property-location"><i class="fas fa-map-marker-alt me-2"></i>Brooklyn, New York</p>
-                            <div class="property-features">
-                                <div class="property-feature">
-                                    <i class="fas fa-bed"></i>
-                                    <span>1 Bed</span>
-                                </div>
-                                <div class="property-feature">
-                                    <i class="fas fa-bath"></i>
-                                    <span>1 Bath</span>
-                                </div>
-                                <div class="property-feature">
-                                    <i class="fas fa-ruler-combined"></i>
-                                    <span>650 sqft</span>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <a href="property-details.html?id=6" class="btn btn-outline-primary w-100">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Properties will be loaded dynamically -->
             </div>
-            
-            <!-- Pagination -->
-            <nav aria-label="Properties pagination" class="pt-4 pb-4">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
+
+            <nav aria-label="Property pagination" class="mt-5">
+                <ul class="pagination justify-content-center" id="pagination">
+                    <!-- Pagination will be loaded dynamically -->
                 </ul>
             </nav>
         </div>
-    </section>
-    
-    <section class="contact-section pt-5 pb-5 mt-0">
-        <div class="container text-white-50">
-            <h2>Ready to Find Your Perfect Home?</h2>
-            <p>Our expert agents are ready to help you find the property that meets all your requirements and fits your budget.</p>
-            <a href="contact.html" class="btn btn-primary btn-lg">Schedule a Visit</a>
+    </div>
+
+    <div class="contact-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2 class="mb-3">Ready to Find Your Luxury Property?</h2>
+                    <p class="text-black-50 mb-0">
+                        Our team of luxury real estate experts is ready to help you find the perfect property 
+                        that meets your unique requirements. Contact us today to schedule a private viewing.
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <a href="contact.html" class="btn btn-primary">Schedule a Private Viewing</a>
+                </div>
+            </div>
         </div>
-    </section>    
-    
+    </div>
+
     <special-footer></special-footer>
 
     <script src="assets/js/header_footer.js"></script>
     <script src="assets/js/all.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/filter_properties"></script>
+    <script src="assets/js/properties.js"></script>
+    <script src="assets/js/filter_properties.js"></script>
 </body>
 </html>

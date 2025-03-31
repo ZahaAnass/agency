@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Property Details - Agence d'immobilier</title>
+    <title>Property Details - Real Estate Agency</title>
     <!-- Bootstrap 5 -->
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
     <!-- Font Awesome icons -->
@@ -18,10 +18,10 @@
 
     <main class="container mt-5">
         <!-- Breadcrumb -->
-        <nav aria-label="breadcrumb pt-5">
+        <nav aria-label="breadcrumb" class="mb-4">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="properties.html">Properties</a></li>
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item"><a href="properties.html" class="text-decoration-none">Properties</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Property Details</li>
             </ol>
         </nav>
@@ -37,13 +37,13 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row g-4">
             <!-- Property Details -->
             <div class="col-lg-8">
                 <div class="property-info">
-                    <h1 class="mb-4" id="property-title">Loading...</h1>
+                    <h1 class="property-title mb-4" id="property-title">Loading...</h1>
                     <div class="d-flex justify-content-between align-items-center mb-4">
-                        <h2 class="text-primary mb-0" id="property-price">Loading...</h2>
+                        <h2 class="property-price mb-0" id="property-price">Loading...</h2>
                         <div class="d-flex gap-2">
                             <button class="btn btn-outline-primary">
                                 <i class="fas fa-heart"></i> Save
@@ -59,13 +59,13 @@
                     </div>
 
                     <div class="mb-4">
-                        <h3>Description</h3>
-                        <p id="property-description">Loading...</p>
+                        <h3 class="mb-3">Description</h3>
+                        <p id="property-description" class="property-description">Loading...</p>
                     </div>
 
                     <div class="mb-4">
-                        <h3>Features & Amenities</h3>
-                        <ul class="list-unstyled row" id="property-amenities">
+                        <h3 class="mb-3">Features & Amenities</h3>
+                        <ul class="list-unstyled amenities-list" id="property-amenities">
                             <!-- Amenities will be loaded dynamically -->
                         </ul>
                     </div>
@@ -75,11 +75,11 @@
             <!-- Sidebar -->
             <div class="col-lg-4">
                 <!-- Agent Card -->
-                <div class="agent-card mb-4">
+                <div class="agent-card">
                     <div class="text-center">
                         <img src="assets/images/agent.jpg" alt="Agent" class="agent-image">
-                        <h4>John Smith</h4>
-                        <p class="text-muted">Senior Real Estate Agent</p>
+                        <h4>Sarah Johnson</h4>
+                        <p class="text-muted">Senior Real Estate Specialist</p>
                         <div class="d-flex justify-content-center gap-2 mb-3">
                             <i class="fas fa-star text-warning"></i>
                             <i class="fas fa-star text-warning"></i>
@@ -87,6 +87,7 @@
                             <i class="fas fa-star text-warning"></i>
                             <i class="fas fa-star text-warning"></i>
                         </div>
+                        <p class="text-muted mb-3">15+ years of experience in luxury real estate</p>
                         <button class="btn btn-primary w-100">Contact Agent</button>
                     </div>
                 </div>
@@ -131,172 +132,66 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/header_footer.js"></script>
     <script>
-        // Property data
-        const properties = {
-            1: {
-                title: "Modern Apartment in New York",
-                price: "$450,000",
-                location: "Manhattan, New York",
-                features: [
-                    { icon: "bed", text: "3 Bedrooms" },
-                    { icon: "bath", text: "2 Bathrooms" },
-                    { icon: "ruler-combined", text: "1,200 sqft" },
-                    { icon: "car", text: "1 Garage" },
-                    { icon: "calendar", text: "Built in 2021" },
-                    { icon: "map-marker-alt", text: "Manhattan, New York" }
-                ],
-                description: "This modern apartment in the heart of Manhattan offers stunning city views and contemporary living spaces. The open-concept layout features high ceilings, floor-to-ceiling windows, and premium finishes throughout. The kitchen is equipped with stainless steel appliances and granite countertops.",
-                amenities: [
-                    "Central Air Conditioning",
-                    "High-Speed Internet",
-                    "Security System",
-                    "Fitness Center",
-                    "24/7 Concierge",
-                    "Pet Friendly"
-                ]
-            },
-            2: {
-                title: "Spacious Family Home",
-                price: "$750,000",
-                location: "Beverly Hills, Los Angeles",
-                features: [
-                    { icon: "bed", text: "4 Bedrooms" },
-                    { icon: "bath", text: "3 Bathrooms" },
-                    { icon: "ruler-combined", text: "2,400 sqft" },
-                    { icon: "car", text: "2 Garage" },
-                    { icon: "calendar", text: "Built in 2019" },
-                    { icon: "map-marker-alt", text: "Beverly Hills, Los Angeles" }
-                ],
-                description: "This spacious family home in Beverly Hills offers the perfect blend of luxury and comfort. The property features a grand entrance, formal dining room, and a gourmet kitchen with top-of-the-line appliances. The backyard includes a swimming pool and outdoor kitchen.",
-                amenities: [
-                    "Swimming Pool",
-                    "Outdoor Kitchen",
-                    "Smart Home System",
-                    "Wine Cellar",
-                    "Home Office",
-                    "Garden"
-                ]
-            },
-            3: {
-                title: "Luxury Waterfront Villa",
-                price: "$1,200,000",
-                location: "South Beach, Miami",
-                features: [
-                    { icon: "bed", text: "5 Bedrooms" },
-                    { icon: "bath", text: "4 Bathrooms" },
-                    { icon: "ruler-combined", text: "3,500 sqft" },
-                    { icon: "car", text: "3 Garage" },
-                    { icon: "calendar", text: "Built in 2020" },
-                    { icon: "map-marker-alt", text: "South Beach, Miami" }
-                ],
-                description: "This stunning waterfront villa offers breathtaking ocean views and luxurious living spaces. The property features high-end finishes, an open-concept layout, and premium amenities throughout. The gourmet kitchen is equipped with top-of-the-line appliances and custom cabinetry.",
-                amenities: [
-                    "Ocean View",
-                    "Private Beach Access",
-                    "Infinity Pool",
-                    "Smart Home System",
-                    "Wine Cellar",
-                    "Home Theater"
-                ]
-            },
-            4: {
-                title: "Downtown Luxury Condo",
-                price: "$520,000",
-                location: "Loop, Chicago",
-                features: [
-                    { icon: "bed", text: "2 Bedrooms" },
-                    { icon: "bath", text: "2 Bathrooms" },
-                    { icon: "ruler-combined", text: "1,100 sqft" },
-                    { icon: "car", text: "1 Garage" },
-                    { icon: "calendar", text: "Built in 2022" },
-                    { icon: "map-marker-alt", text: "Loop, Chicago" }
-                ],
-                description: "This modern downtown condo offers the perfect urban lifestyle. The unit features floor-to-ceiling windows with stunning city views, an open-concept living area, and a designer kitchen. The building includes premium amenities and 24/7 security.",
-                amenities: [
-                    "City View",
-                    "Fitness Center",
-                    "Rooftop Deck",
-                    "24/7 Security",
-                    "Package Reception",
-                    "Bike Storage"
-                ]
-            },
-            5: {
-                title: "Modern House with Garden",
-                price: "$680,000",
-                location: "Queen Anne, Seattle",
-                features: [
-                    { icon: "bed", text: "3 Bedrooms" },
-                    { icon: "bath", text: "2 Bathrooms" },
-                    { icon: "ruler-combined", text: "1,800 sqft" },
-                    { icon: "car", text: "2 Garage" },
-                    { icon: "calendar", text: "Built in 2021" },
-                    { icon: "map-marker-alt", text: "Queen Anne, Seattle" }
-                ],
-                description: "This modern house in Queen Anne features a beautiful garden and contemporary design elements. The home includes a spacious kitchen with island, hardwood floors throughout, and a finished basement. The backyard offers a perfect space for outdoor entertaining.",
-                amenities: [
-                    "Garden",
-                    "Hardwood Floors",
-                    "Finished Basement",
-                    "Smart Home System",
-                    "Storage Shed",
-                    "Fenced Yard"
-                ]
-            },
-            6: {
-                title: "Cozy Studio Apartment",
-                price: "$380,000",
-                location: "Brooklyn, New York",
-                features: [
-                    { icon: "bed", text: "1 Bedroom" },
-                    { icon: "bath", text: "1 Bathroom" },
-                    { icon: "ruler-combined", text: "650 sqft" },
-                    { icon: "car", text: "No Garage" },
-                    { icon: "calendar", text: "Built in 2023" },
-                    { icon: "map-marker-alt", text: "Brooklyn, New York" }
-                ],
-                description: "This cozy studio apartment in Brooklyn offers a perfect blend of comfort and style. The unit features an efficient layout, modern appliances, and plenty of natural light. The building includes common areas and is close to public transportation.",
-                amenities: [
-                    "Modern Appliances",
-                    "High Ceilings",
-                    "Common Areas",
-                    "Laundry Room",
-                    "Bike Storage",
-                    "Pet Friendly"
-                ]
-            }
-        };
-
         // Get property ID from URL
         const urlParams = new URLSearchParams(window.location.search);
         const propertyId = parseInt(urlParams.get('id')) || 1;
-        const property = properties[propertyId];
 
-        // Update page content
-        document.getElementById('property-title').textContent = property.title;
-        document.getElementById('property-price').textContent = property.price;
-        document.getElementById('property-description').textContent = property.description;
+        // Fetch property data from JSON file
+        fetch('assets/js/properties.json')
+            .then(response => response.json())
+            .then(data => {
+                const property = data.properties.find(p => p.id === propertyId);
+                if (!property) {
+                    console.error('Property not found');
+                    return;
+                }
 
-        // Update features
-        const featuresGrid = document.getElementById('property-features');
-        property.features.forEach(feature => {
-            featuresGrid.innerHTML += `
-                <div class="feature-item">
-                    <i class="fas fa-${feature.icon}"></i>
-                    <span>${feature.text}</span>
-                </div>
-            `;
-        });
+                // Update page content
+                document.getElementById('property-title').textContent = property.title;
+                document.getElementById('property-price').textContent = property.price;
+                document.getElementById('property-description').textContent = property.description || 'No description available';
 
-        // Update amenities
-        const amenitiesList = document.getElementById('property-amenities');
-        property.amenities.forEach(amenity => {
-            amenitiesList.innerHTML += `
-                <li class="col-md-4 mb-2">
-                    <i class="fas fa-check text-success me-2"></i>${amenity}
-                </li>
-            `;
-        });
+                // Update features
+                const featuresGrid = document.getElementById('property-features');
+                property.features.forEach(feature => {
+                    featuresGrid.innerHTML += `
+                        <div class="feature-item">
+                            <i class="fas fa-${feature.icon}"></i>
+                            <span>${feature.text}</span>
+                        </div>
+                    `;
+                });
+
+                // Update amenities if available
+                const amenitiesList = document.getElementById('property-amenities');
+                if (property.amenities) {
+                    property.amenities.forEach(amenity => {
+                        amenitiesList.innerHTML += `
+                            <li>
+                                <i class="fas fa-check"></i>${amenity}
+                            </li>
+                        `;
+                    });
+                }
+
+                // Update images if available
+                if (property.images) {
+                    const mainImage = document.getElementById('mainImage');
+                    const thumbnailGallery = document.querySelector('.thumbnail-gallery');
+                    
+                    // Set main image
+                    mainImage.src = property.images[0];
+                    
+                    // Update thumbnails
+                    property.images.forEach((image, index) => {
+                        if (index === 0) return; // Skip first image as it's already set as main
+                        thumbnailGallery.innerHTML += `
+                            <img src="${image}" alt="Thumbnail ${index + 1}" onclick="changeMainImage(this.src)">
+                        `;
+                    });
+                }
+            })
+            .catch(error => console.error('Error loading property data:', error));
 
         function changeMainImage(src) {
             document.getElementById('mainImage').src = src;
@@ -305,7 +200,7 @@
         // Handle form submission
         document.getElementById('visit-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for scheduling a visit! We will contact you shortly.');
+            alert('Thank you for scheduling a visit! Our agent will contact you shortly to confirm the appointment.');
             this.reset();
         });
     </script>
