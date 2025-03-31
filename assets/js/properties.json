@@ -1,0 +1,258 @@
+{
+    "properties": [
+        {
+            "id": 1,
+            "title": "Modern Apartment in New York",
+            "price": "$450,000",
+            "location": "Manhattan, New York",
+            "type": "apartment",
+            "image": "assets/images/villa.jpg",
+            "description": "This modern apartment in Manhattan offers the perfect blend of comfort and style. The open-concept living area features floor-to-ceiling windows with stunning city views. The kitchen is equipped with stainless steel appliances and granite countertops. The master bedroom includes a walk-in closet and en-suite bathroom. Building amenities include a fitness center, rooftop deck, and 24/7 security.",
+            "features": [
+                { "icon": "bed", "text": "3 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "1,200 sqft" }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Spacious Family Home",
+            "price": "$750,000",
+            "location": "Beverly Hills, Los Angeles",
+            "type": "house",
+            "image": "assets/images/villa.jpg",
+            "description": "This spacious family home in Beverly Hills offers luxurious living with modern amenities. The property features a grand entrance, formal living and dining rooms, and a gourmet kitchen with custom cabinetry. The master suite includes a private balcony and spa-like bathroom. The backyard features a pool, outdoor kitchen, and multiple entertainment areas.",
+            "features": [
+                { "icon": "bed", "text": "4 Bedrooms" },
+                { "icon": "bath", "text": "3 Bathrooms" },
+                { "icon": "ruler-combined", "text": "2,400 sqft" }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Luxury Waterfront Villa",
+            "price": "$1,200,000",
+            "location": "South Beach, Miami",
+            "type": "villa",
+            "image": "assets/images/villa.jpg",
+            "description": "This stunning waterfront villa in South Beach offers the ultimate in luxury living. The property features direct beach access, panoramic ocean views, and an infinity pool. The open-concept living areas flow seamlessly to outdoor spaces. The gourmet kitchen includes custom cabinetry and top-of-the-line appliances. The master suite features a private balcony with ocean views.",
+            "features": [
+                { "icon": "bed", "text": "5 Bedrooms" },
+                { "icon": "bath", "text": "4 Bathrooms" },
+                { "icon": "ruler-combined", "text": "3,500 sqft" }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Downtown Luxury Condo",
+            "price": "$520,000",
+            "location": "Loop, Chicago",
+            "type": "condo",
+            "image": "assets/images/villa.jpg",
+            "description": "This sophisticated downtown condo in Chicago's Loop district offers modern urban living at its finest. The unit features high ceilings, hardwood floors, and floor-to-ceiling windows with stunning city views. The kitchen boasts quartz countertops and premium appliances. Building amenities include a 24-hour doorman, fitness center, and rooftop lounge with panoramic city views.",
+            "features": [
+                { "icon": "bed", "text": "2 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "1,100 sqft" }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Modern House with Garden",
+            "price": "$680,000",
+            "location": "Queen Anne, Seattle",
+            "type": "house",
+            "image": "assets/images/villa.jpg",
+            "description": "This contemporary home in Queen Anne combines modern design with Pacific Northwest charm. The property features an open floor plan, custom built-ins, and a chef's kitchen with marble countertops. The master suite offers a private deck with city views. The landscaped garden includes native plants, a water feature, and multiple seating areas perfect for outdoor entertaining.",
+            "features": [
+                { "icon": "bed", "text": "3 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "1,800 sqft" }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Cozy Studio Apartment",
+            "price": "$380,000",
+            "location": "Brooklyn, New York",
+            "type": "apartment",
+            "image": "assets/images/villa.jpg",
+            "description": "This thoughtfully designed studio apartment in Brooklyn maximizes space and functionality. The unit features custom built-in storage, a Murphy bed, and a modern kitchen with stainless steel appliances. Large windows provide natural light and city views. The building offers a rooftop garden, bike storage, and a package receiving service.",
+            "features": [
+                { "icon": "bed", "text": "1 Bedroom" },
+                { "icon": "bath", "text": "1 Bathroom" },
+                { "icon": "ruler-combined", "text": "650 sqft" }
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Luxury Penthouse Suite",
+            "price": "$1,500,000",
+            "location": "Downtown Miami",
+            "type": "condo",
+            "image": "assets/images/villa.jpg",
+            "description": "This spectacular penthouse suite offers the pinnacle of luxury living in downtown Miami. The residence features soaring ceilings, premium finishes, and wraparound balconies with breathtaking city and ocean views. The gourmet kitchen includes custom cabinetry and high-end appliances. The master suite features a private terrace and spa-like bathroom. Building amenities include a private beach club, infinity pool, and 24-hour concierge service.",
+            "features": [
+                { "icon": "bed", "text": "3 Bedrooms" },
+                { "icon": "bath", "text": "3.5 Bathrooms" },
+                { "icon": "ruler-combined", "text": "2,800 sqft" }
+            ]
+        },
+        {
+            "id": 8,
+            "title": "Beachfront Villa",
+            "price": "$2,200,000",
+            "location": "Malibu, California",
+            "type": "villa",
+            "image": "assets/images/villa.jpg",
+            "description": "This exquisite beachfront villa in Malibu offers the ultimate coastal living experience. The property features direct beach access, panoramic ocean views, and multiple outdoor living spaces. The gourmet kitchen opens to a covered patio with an outdoor kitchen. The master suite includes a private balcony and luxurious bathroom with ocean views. Additional features include a wine cellar, home theater, and infinity pool overlooking the Pacific.",
+            "features": [
+                { "icon": "bed", "text": "4 Bedrooms" },
+                { "icon": "bath", "text": "3 Bathrooms" },
+                { "icon": "ruler-combined", "text": "3,200 sqft" }
+            ]
+        },
+        {
+            "id": 9,
+            "title": "Historic Townhouse",
+            "price": "$950,000",
+            "location": "Georgetown, Washington DC",
+            "type": "townhouse",
+            "image": "assets/images/villa.jpg",
+            "description": "This meticulously restored historic townhouse in Georgetown combines classic architecture with modern amenities. The property features original hardwood floors, crown molding, and a grand staircase. The updated kitchen includes custom cabinetry and marble countertops. The master suite offers a private balcony and renovated bathroom. The garden level includes a family room and wine cellar.",
+            "features": [
+                { "icon": "bed", "text": "4 Bedrooms" },
+                { "icon": "bath", "text": "3 Bathrooms" },
+                { "icon": "ruler-combined", "text": "2,600 sqft" }
+            ]
+        },
+        {
+            "id": 10,
+            "title": "Modern Loft Apartment",
+            "price": "$620,000",
+            "location": "SoHo, New York",
+            "type": "apartment",
+            "image": "assets/images/villa.jpg",
+            "description": "This stunning loft apartment in SoHo features soaring ceilings, exposed brick walls, and original hardwood floors. The open-concept living space includes a gourmet kitchen with custom cabinetry and high-end appliances. The master bedroom features a walk-in closet and en-suite bathroom. The building offers a fitness center, rooftop terrace, and 24-hour doorman service.",
+            "features": [
+                { "icon": "bed", "text": "2 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "1,500 sqft" }
+            ]
+        },
+        {
+            "id": 11,
+            "title": "Mountain View Estate",
+            "price": "$1,800,000",
+            "location": "Aspen, Colorado",
+            "type": "house",
+            "image": "assets/images/villa.jpg",
+            "description": "This magnificent mountain estate in Aspen offers unparalleled views and luxury living. The property features a grand great room with floor-to-ceiling windows overlooking the mountains. The gourmet kitchen includes custom cabinetry and a large center island. The master suite offers a private balcony and spa-like bathroom. Additional features include a wine cellar, home theater, and heated outdoor pool with mountain views.",
+            "features": [
+                { "icon": "bed", "text": "5 Bedrooms" },
+                { "icon": "bath", "text": "4 Bathrooms" },
+                { "icon": "ruler-combined", "text": "4,200 sqft" }
+            ]
+        },
+        {
+            "id": 12,
+            "title": "Luxury Beachfront Condo",
+            "price": "$1,100,000",
+            "location": "San Diego, California",
+            "type": "condo",
+            "image": "assets/images/villa.jpg",
+            "description": "This sophisticated beachfront condo in San Diego offers the perfect blend of luxury and coastal living. The unit features floor-to-ceiling windows with panoramic ocean views, premium finishes, and an open-concept living area. The gourmet kitchen includes custom cabinetry and high-end appliances. The master suite offers a private balcony and spa-like bathroom. Building amenities include a private beach access, pool, and fitness center.",
+            "features": [
+                { "icon": "bed", "text": "2 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "1,800 sqft" }
+            ]
+        },
+        {
+            "id": 13,
+            "title": "Modern Villa with Pool",
+            "price": "$2,500,000",
+            "location": "Scottsdale, Arizona",
+            "type": "villa",
+            "image": "assets/images/villa.jpg",
+            "description": "This contemporary villa in Scottsdale offers resort-style living with modern amenities. The property features an open floor plan, high ceilings, and floor-to-ceiling windows with mountain views. The gourmet kitchen includes custom cabinetry and premium appliances. The master suite offers a private balcony and spa-like bathroom. The backyard features a resort-style pool, outdoor kitchen, and multiple entertainment areas.",
+            "features": [
+                { "icon": "bed", "text": "5 Bedrooms" },
+                { "icon": "bath", "text": "4 Bathrooms" },
+                { "icon": "ruler-combined", "text": "4,500 sqft" }
+            ]
+        },
+        {
+            "id": 14,
+            "title": "Downtown Apartment",
+            "price": "$480,000",
+            "location": "Boston, Massachusetts",
+            "type": "apartment",
+            "image": "assets/images/villa.jpg",
+            "description": "This stylish downtown apartment in Boston offers modern living in a historic setting. The unit features hardwood floors, custom built-ins, and a modern kitchen with granite countertops. The master bedroom includes a walk-in closet and renovated bathroom. Building amenities include a fitness center, rooftop deck with city views, and 24-hour concierge service.",
+            "features": [
+                { "icon": "bed", "text": "2 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "1,200 sqft" }
+            ]
+        },
+        {
+            "id": 15,
+            "title": "Luxury Townhouse",
+            "price": "$850,000",
+            "location": "San Francisco, California",
+            "type": "townhouse",
+            "image": "assets/images/villa.jpg",
+            "description": "This elegant townhouse in San Francisco offers sophisticated living with modern amenities. The property features high ceilings, custom built-ins, and a gourmet kitchen with marble countertops. The master suite includes a private balcony and spa-like bathroom. The garden level features a family room and wine cellar. Additional features include a private rooftop deck with city views.",
+            "features": [
+                { "icon": "bed", "text": "3 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "2,000 sqft" }
+            ]
+        },
+        {
+            "id": 16,
+            "title": "Modern House with Garden",
+            "price": "$1,200,000",
+            "location": "Austin, Texas",
+            "type": "house",
+            "image": "assets/images/villa.jpg",
+            "description": "This contemporary home in Austin offers modern living with Texas charm. The property features an open floor plan, custom built-ins, and a gourmet kitchen with quartz countertops. The master suite includes a private balcony and spa-like bathroom. The backyard features a pool, outdoor kitchen, and multiple entertainment areas. Additional features include a home office and media room.",
+            "features": [
+                { "icon": "bed", "text": "4 Bedrooms" },
+                { "icon": "bath", "text": "3 Bathrooms" },
+                { "icon": "ruler-combined", "text": "2,800 sqft" }
+            ]
+        },
+        {
+            "id": 17,
+            "title": "Luxury Beach Villa",
+            "price": "$3,200,000",
+            "location": "Maui, Hawaii",
+            "type": "villa",
+            "image": "assets/images/villa.jpg",
+            "description": "This spectacular beach villa in Maui offers the ultimate in tropical luxury living. The property features direct beach access, panoramic ocean views, and multiple outdoor living spaces. The gourmet kitchen includes custom cabinetry and high-end appliances. The master suite offers a private balcony and luxurious bathroom with ocean views. Additional features include a wine cellar, home theater, and infinity pool overlooking the Pacific.",
+            "features": [
+                { "icon": "bed", "text": "5 Bedrooms" },
+                { "icon": "bath", "text": "4 Bathrooms" },
+                { "icon": "ruler-combined", "text": "4,800 sqft" }
+            ]
+        },
+        {
+            "id": 18,
+            "title": "Modern Downtown Condo",
+            "price": "$780,000",
+            "location": "Denver, Colorado",
+            "type": "condo",
+            "image": "assets/images/villa.jpg",
+            "description": "This sophisticated downtown condo in Denver offers modern urban living at its finest. The unit features high ceilings, hardwood floors, and floor-to-ceiling windows with stunning city and mountain views. The kitchen boasts quartz countertops and premium appliances. Building amenities include a 24-hour doorman, fitness center, and rooftop lounge with panoramic views of the Rocky Mountains.",
+            "features": [
+                { "icon": "bed", "text": "2 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "1,600 sqft" }
+            ]
+        }
+    ],
+    "totalProperties": 18,
+    "propertiesPerPage": 6
+} 
