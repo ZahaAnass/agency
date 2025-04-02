@@ -3,12 +3,9 @@ main {
     justify-content: center;
     align-items: center;
     height: 63vh;
-    background-image: url(../images/villa.jpg);
+    background-image: url(../images/team.jpg);
     background-size: cover;
     background-position: center;
-}
-.history img{
-    width: 70%;
 }
 .card{
     border-radius: 10px;
@@ -43,4 +40,5 @@ main {
 .youtube{
     background-color: #ff0000;
 }
+
 /* .equipe */

@@ -54,3 +54,14 @@
 main{
     text-align: center;
 }
+.text-brand {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.color-b{
+    color: #3498db;
+}
+.color-a{
+    color: white;
+}

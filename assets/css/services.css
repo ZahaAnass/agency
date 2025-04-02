@@ -3,7 +3,10 @@ main {
     justify-content: center;
     align-items: center;
     height: 63vh;
-    background-image: url(../images/villa.jpg);
+    background-image: url(../images/service.jpg);
     background-size: cover;
     background-position: center;
 }
+/* .reason .topic{
+    line-height: 4rem;
+} */
