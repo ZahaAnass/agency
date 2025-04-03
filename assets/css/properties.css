@@ -13,10 +13,10 @@ body {
 }
 
 main {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/luxury.jpg');
+    background: url('../images/luxury-property.jpg');
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 67vh;
     display: flex;
     align-items: center;
     justify-content: center;
