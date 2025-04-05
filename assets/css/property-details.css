@@ -8,26 +8,6 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.thumbnail-gallery {
-    display: flex;
-    gap: 10px;
-    margin-top: 1rem;
-    overflow-x: auto;
-    padding-bottom: 10px;
-}
-.thumbnail-gallery img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-.thumbnail-gallery img:hover {
-    transform: scale(1.05);
-    border-color: var(--bs-primary);
-}
 .property-info {
     background: #fff;
     padding: 2rem;
@@ -38,10 +18,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background: #f8f9fa;
-    border-radius: 8px;
 }
 .feature-item {
     display: flex;
@@ -56,6 +32,9 @@
     color: var(--bs-primary);
     font-size: 1.25rem;
 }
+main .text-area{
+    resize: none;
+}
 .agent-card {
     background: white;
     border-radius: 8px;
@@ -68,7 +47,6 @@
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1.5rem;
     border: 3px solid var(--bs-primary);
 }
 .contact-form {
@@ -107,8 +85,8 @@
     margin-right: 0.5rem;
 }
 @media (max-width: 768px) {
-    .property-gallery img {
-        height: 300px;
+    #mainImage {
+        height: 300px !important;
     }
     
     .property-title {

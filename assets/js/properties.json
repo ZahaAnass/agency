@@ -12,7 +12,28 @@
                 { "icon": "bed", "text": "3 Bedrooms" },
                 { "icon": "bath", "text": "2 Bathrooms" },
                 { "icon": "ruler-combined", "text": "1,200 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Floor-to-ceiling windows",
+                "Stainless steel appliances",
+                "Granite countertops",
+                "Walk-in closet",
+                "En-suite bathroom",
+                "Fitness center",
+                "Rooftop deck",
+                "24/7 security",
+                "Central air conditioning",
+                "In-unit laundry"
+            ],
+            "agent": {
+                "name": "Sarah Johnson",
+                "title": "Senior Real Estate Specialist",
+                "image": "assets/images/property-agent-1.jpg",
+                "rating": 5,
+                "experience": "15+ years of experience in luxury real estate",
+                "phone": "+1 (212) 555-1234",
+                "email": "sarah.johnson@realestate.com"
+            }
         },
         {
             "id": 2,
@@ -26,7 +47,28 @@
                 { "icon": "bed", "text": "4 Bedrooms" },
                 { "icon": "bath", "text": "3 Bathrooms" },
                 { "icon": "ruler-combined", "text": "2,400 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Grand entrance",
+                "Formal living and dining rooms",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "Private balcony",
+                "Spa-like bathroom",
+                "Swimming pool",
+                "Outdoor kitchen",
+                "Entertainment areas",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Michael Rodriguez",
+                "title": "Luxury Property Specialist",
+                "image": "assets/images/property-agent-2.jpg",
+                "rating": 5,
+                "experience": "12+ years of experience in high-end real estate",
+                "phone": "+1 (310) 555-5678",
+                "email": "michael.rodriguez@realestate.com"
+            }
         },
         {
             "id": 3,
@@ -40,7 +82,28 @@
                 { "icon": "bed", "text": "5 Bedrooms" },
                 { "icon": "bath", "text": "4 Bathrooms" },
                 { "icon": "ruler-combined", "text": "3,500 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Direct beach access",
+                "Panoramic ocean views",
+                "Infinity pool",
+                "Open-concept living areas",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "Top-of-the-line appliances",
+                "Private balcony",
+                "Outdoor entertainment areas",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Emily Chen",
+                "title": "Waterfront Property Expert",
+                "image": "assets/images/property-agent-3.jpg",
+                "rating": 5,
+                "experience": "10+ years specializing in waterfront properties",
+                "phone": "+1 (305) 555-9012",
+                "email": "emily.chen@realestate.com"
+            }
         },
         {
             "id": 4,
@@ -54,7 +117,29 @@
                 { "icon": "bed", "text": "2 Bedrooms" },
                 { "icon": "bath", "text": "2 Bathrooms" },
                 { "icon": "ruler-combined", "text": "1,100 sqft" }
-            ]
+            ],
+            "amenities": [
+                "High ceilings",
+                "Hardwood floors",
+                "Floor-to-ceiling windows",
+                "City views",
+                "Quartz countertops",
+                "Premium appliances",
+                "24-hour doorman",
+                "Fitness center",
+                "Rooftop lounge",
+                "In-unit laundry",
+                "Central air conditioning"
+            ],
+                "agent": {
+                    "name": "James Wilson",
+                    "title": "Urban Properties Specialist",
+                    "image": "assets/images/property-agent-4.jpg",
+                    "rating": 4.5,
+                    "experience": "8+ years specializing in downtown properties",
+                    "phone": "+1 (312) 555-3456",
+                    "email": "james.wilson@realestate.com"
+                }
         },
         {
             "id": 5,
@@ -68,7 +153,28 @@
                 { "icon": "bed", "text": "3 Bedrooms" },
                 { "icon": "bath", "text": "2 Bathrooms" },
                 { "icon": "ruler-combined", "text": "1,800 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Open floor plan",
+                "Custom built-ins",
+                "Chef's kitchen",
+                "Marble countertops",
+                "Private deck",
+                "City views",
+                "Landscaped garden",
+                "Native plants",
+                "Water feature",
+                "Outdoor seating areas"
+            ],
+            "agent": {
+                "name": "Olivia Martinez",
+                "title": "Contemporary Home Expert",
+                "image": "assets/images/property-agent-5.jpg",
+                "rating": 4.8,
+                "experience": "10+ years in residential real estate",
+                "phone": "+1 (206) 555-7890",
+                "email": "olivia.martinez@realestate.com"
+            }
         },
         {
             "id": 6,
@@ -82,7 +188,28 @@
                 { "icon": "bed", "text": "1 Bedroom" },
                 { "icon": "bath", "text": "1 Bathroom" },
                 { "icon": "ruler-combined", "text": "650 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Custom built-in storage",
+                "Murphy bed",
+                "Modern kitchen",
+                "Stainless steel appliances",
+                "Large windows",
+                "Natural light",
+                "City views",
+                "Rooftop garden",
+                "Bike storage",
+                "Package receiving service"
+            ],
+            "agent": {
+                "name": "David Kim",
+                "title": "Urban Living Specialist",
+                "image": "assets/images/property-agent-6.jpg",
+                "rating": 4.7,
+                "experience": "7+ years experience in NYC apartments",
+                "phone": "+1 (718) 555-2345",
+                "email": "david.kim@realestate.com"
+            }
         },
         {
             "id": 7,
@@ -96,7 +223,30 @@
                 { "icon": "bed", "text": "3 Bedrooms" },
                 { "icon": "bath", "text": "3.5 Bathrooms" },
                 { "icon": "ruler-combined", "text": "2,800 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Soaring ceilings",
+                "Premium finishes",
+                "Wraparound balconies",
+                "City and ocean views",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "High-end appliances",
+                "Private terrace",
+                "Spa-like bathroom",
+                "Private beach club",
+                "Infinity pool",
+                "24-hour concierge service"
+            ],
+            "agent": {
+                "name": "Sophia Reynolds",
+                "title": "Luxury Penthouse Expert",
+                "image": "assets/images/property-agent-7.jpg",
+                "rating": 5,
+                "experience": "15+ years in high-end condominium sales",
+                "phone": "+1 (305) 555-6789",
+                "email": "sophia.reynolds@realestate.com"
+            }
         },
         {
             "id": 8,
@@ -110,7 +260,30 @@
                 { "icon": "bed", "text": "4 Bedrooms" },
                 { "icon": "bath", "text": "3 Bathrooms" },
                 { "icon": "ruler-combined", "text": "3,200 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Direct beach access",
+                "Panoramic ocean views",
+                "Multiple outdoor living spaces",
+                "Gourmet kitchen",
+                "Covered patio",
+                "Outdoor kitchen",
+                "Private balcony",
+                "Luxurious bathroom",
+                "Wine cellar",
+                "Home theater",
+                "Infinity pool",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Alexander Grant",
+                "title": "Coastal Property Specialist",
+                "image": "assets/images/property-agent-8.jpg",
+                "rating": 5,
+                "experience": "18+ years selling luxury waterfront homes",
+                "phone": "+1 (310) 555-9012",
+                "email": "alexander.grant@realestate.com"
+            }
         },
         {
             "id": 9,
@@ -124,7 +297,30 @@
                 { "icon": "bed", "text": "4 Bedrooms" },
                 { "icon": "bath", "text": "3 Bathrooms" },
                 { "icon": "ruler-combined", "text": "2,600 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Original hardwood floors",
+                "Crown molding",
+                "Grand staircase",
+                "Updated kitchen",
+                "Custom cabinetry",
+                "Marble countertops",
+                "Private balcony",
+                "Renovated bathroom",
+                "Family room",
+                "Wine cellar",
+                "Garden level",
+                "Historic architecture"
+            ],
+            "agent": {
+                "name": "Isabella Thompson",
+                "title": "Historic Home Expert",
+                "image": "assets/images/property-agent-9.jpg",
+                "rating": 4.9,
+                "experience": "12+ years specializing in historic properties",
+                "phone": "+1 (202) 555-3456",
+                "email": "isabella.thompson@realestate.com"
+            }
         },
         {
             "id": 10,
@@ -138,7 +334,30 @@
                 { "icon": "bed", "text": "2 Bedrooms" },
                 { "icon": "bath", "text": "2 Bathrooms" },
                 { "icon": "ruler-combined", "text": "1,500 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Soaring ceilings",
+                "Exposed brick walls",
+                "Original hardwood floors",
+                "Open-concept living space",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "High-end appliances",
+                "Walk-in closet",
+                "En-suite bathroom",
+                "Fitness center",
+                "Rooftop terrace",
+                "24-hour doorman service"
+            ],
+            "agent": {
+                "name": "Noah Parker",
+                "title": "Manhattan Loft Specialist",
+                "image": "assets/images/property-agent-10.jpg",
+                "rating": 4.8,
+                "experience": "9+ years in SoHo and Tribeca properties",
+                "phone": "+1 (212) 555-7890",
+                "email": "noah.parker@realestate.com"
+            }
         },
         {
             "id": 11,
@@ -152,7 +371,30 @@
                 { "icon": "bed", "text": "5 Bedrooms" },
                 { "icon": "bath", "text": "4 Bathrooms" },
                 { "icon": "ruler-combined", "text": "4,200 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Grand great room",
+                "Floor-to-ceiling windows",
+                "Mountain views",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "Large center island",
+                "Private balcony",
+                "Spa-like bathroom",
+                "Wine cellar",
+                "Home theater",
+                "Heated outdoor pool",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Victoria Hughes",
+                "title": "Mountain Estate Expert",
+                "image": "assets/images/property-agent-11.jpg",
+                "rating": 5,
+                "experience": "14+ years in luxury alpine properties",
+                "phone": "+1 (970) 555-2345",
+                "email": "victoria.hughes@realestate.com"
+            }
         },
         {
             "id": 12,
@@ -166,7 +408,30 @@
                 { "icon": "bed", "text": "2 Bedrooms" },
                 { "icon": "bath", "text": "2 Bathrooms" },
                 { "icon": "ruler-combined", "text": "1,800 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Floor-to-ceiling windows",
+                "Panoramic ocean views",
+                "Premium finishes",
+                "Open-concept living area",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "High-end appliances",
+                "Private balcony",
+                "Spa-like bathroom",
+                "Private beach access",
+                "Pool",
+                "Fitness center"
+            ],
+            "agent": {
+                "name": "Benjamin Foster",
+                "title": "Coastal Luxury Specialist",
+                "image": "assets/images/property-agent-12.jpg",
+                "rating": 4.9,
+                "experience": "11+ years in Southern California real estate",
+                "phone": "+1 (619) 555-6789",
+                "email": "benjamin.foster@realestate.com"
+            }
         },
         {
             "id": 13,
@@ -180,7 +445,31 @@
                 { "icon": "bed", "text": "5 Bedrooms" },
                 { "icon": "bath", "text": "4 Bathrooms" },
                 { "icon": "ruler-combined", "text": "4,500 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Open floor plan",
+                "High ceilings",
+                "Floor-to-ceiling windows",
+                "Mountain views",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "Premium appliances",
+                "Private balcony",
+                "Spa-like bathroom",
+                "Resort-style pool",
+                "Outdoor kitchen",
+                "Multiple entertainment areas",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Ava Richardson",
+                "title": "Desert Luxury Expert",
+                "image": "assets/images/property-agent-13.jpg",
+                "rating": 5,
+                "experience": "13+ years in Arizona luxury real estate",
+                "phone": "+1 (480) 555-9012",
+                "email": "ava.richardson@realestate.com"
+            }
         },
         {
             "id": 14,
@@ -194,7 +483,31 @@
                 { "icon": "bed", "text": "2 Bedrooms" },
                 { "icon": "bath", "text": "2 Bathrooms" },
                 { "icon": "ruler-combined", "text": "1,200 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Hardwood floors",
+                "Custom built-ins",
+                "Modern kitchen",
+                "Granite countertops",
+                "Walk-in closet",
+                "Renovated bathroom",
+                "Fitness center",
+                "Rooftop deck",
+                "City views",
+                "24-hour concierge service",
+                "In-unit laundry",
+                "Central air conditioning"
+            ],
+            "agent": {
+                "name": "Ethan Brooks",
+                "title": "Boston Urban Specialist",
+                "image": "assets/images/property-agent-14.jpg",
+                "rating": 4.8,
+                "experience": "9+ years in downtown Boston properties",
+                "phone": "+1 (617) 555-3456",
+                "email": "ethan.brooks@realestate.com"
+            }
+            
         },
         {
             "id": 15,
@@ -208,7 +521,30 @@
                 { "icon": "bed", "text": "3 Bedrooms" },
                 { "icon": "bath", "text": "2 Bathrooms" },
                 { "icon": "ruler-combined", "text": "2,000 sqft" }
-            ]
+            ],
+            "amenities": [
+                "High ceilings",
+                "Custom built-ins",
+                "Gourmet kitchen",
+                "Marble countertops",
+                "Private balcony",
+                "Spa-like bathroom",
+                "Family room",
+                "Wine cellar",
+                "Garden level",
+                "Private rooftop deck",
+                "City views",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Madison Clark",
+                "title": "Bay Area Townhouse Expert",
+                "image": "assets/images/property-agent-15.jpg",
+                "rating": 4.9,
+                "experience": "10+ years in San Francisco real estate",
+                "phone": "+1 (415) 555-7890",
+                "email": "madison.clark@realestate.com"
+            }
         },
         {
             "id": 16,
@@ -222,7 +558,30 @@
                 { "icon": "bed", "text": "4 Bedrooms" },
                 { "icon": "bath", "text": "3 Bathrooms" },
                 { "icon": "ruler-combined", "text": "2,800 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Open floor plan",
+                "Custom built-ins",
+                "Gourmet kitchen",
+                "Quartz countertops",
+                "Private balcony",
+                "Spa-like bathroom",
+                "Swimming pool",
+                "Outdoor kitchen",
+                "Multiple entertainment areas",
+                "Home office",
+                "Media room",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Jackson Miller",
+                "title": "Austin Luxury Specialist",
+                "image": "assets/images/property-agent-16.jpg",
+                "rating": 4.8,
+                "experience": "8+ years in Texas luxury properties",
+                "phone": "+1 (512) 555-2345",
+                "email": "jackson.miller@realestate.com"
+            }
         },
         {
             "id": 17,
@@ -236,7 +595,30 @@
                 { "icon": "bed", "text": "5 Bedrooms" },
                 { "icon": "bath", "text": "4 Bathrooms" },
                 { "icon": "ruler-combined", "text": "4,800 sqft" }
-            ]
+            ],
+            "amenities": [
+                "Direct beach access",
+                "Panoramic ocean views",
+                "Multiple outdoor living spaces",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "High-end appliances",
+                "Private balcony",
+                "Luxurious bathroom",
+                "Wine cellar",
+                "Home theater",
+                "Infinity pool",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Zoe Tanaka",
+                "title": "Hawaiian Luxury Expert",
+                "image": "assets/images/property-agent-17.jpg",
+                "rating": 5,
+                "experience": "15+ years specializing in Hawaiian villas",
+                "phone": "+1 (808) 555-6789",
+                "email": "zoe.tanaka@realestate.com"
+            }
         },
         {
             "id": 18,
@@ -250,7 +632,30 @@
                 { "icon": "bed", "text": "2 Bedrooms" },
                 { "icon": "bath", "text": "2 Bathrooms" },
                 { "icon": "ruler-combined", "text": "1,600 sqft" }
-            ]
+            ],
+            "amenities": [
+                "High ceilings",
+                "Hardwood floors",
+                "Floor-to-ceiling windows",
+                "City and mountain views",
+                "Quartz countertops",
+                "Premium appliances",
+                "24-hour doorman",
+                "Fitness center",
+                "Rooftop lounge",
+                "Rocky Mountain views",
+                "In-unit laundry",
+                "Central air conditioning"
+            ],
+            "agent": {
+                "name": "Lucas Bennett",
+                "title": "Denver Urban Specialist",
+                "image": "assets/images/property-agent-18.jpg",
+                "rating": 4.8,
+                "experience": "7+ years in Colorado urban properties",
+                "phone": "+1 (303) 555-9012",
+                "email": "lucas.bennett@realestate.com"
+            }
         }
     ],
     "totalProperties": 18,

@@ -27,23 +27,17 @@
         </nav>
 
         <!-- Property Gallery -->
-        <div class="property-gallery">
-            <img src="assets/images/villa.jpg" alt="Property Main Image" id="mainImage">
-            <div class="thumbnail-gallery">
-                <img src="assets/images/villa.jpg" alt="Thumbnail 1" onclick="changeMainImage(this.src)">
-                <img src="assets/images/villa.jpg" alt="Thumbnail 2" onclick="changeMainImage(this.src)">
-                <img src="assets/images/villa.jpg" alt="Thumbnail 3" onclick="changeMainImage(this.src)">
-                <img src="assets/images/villa.jpg" alt="Thumbnail 4" onclick="changeMainImage(this.src)">
-            </div>
+        <div class="mb-4">
+            <img src="" alt="Property Main Image" id="mainImage" class="w-100 rounded shadow-sm">
         </div>
 
         <div class="row g-4">
             <!-- Property Details -->
             <div class="col-lg-8">
-                <div class="property-info">
-                    <h1 class="property-title mb-4" id="property-title">Loading...</h1>
+                <div class="bg-white p-4 rounded shadow-sm">
+                    <h1 class="display-5 fw-bold mb-4" id="property-title">Loading...</h1>
                     <div class="d-flex justify-content-between align-items-center mb-4">
-                        <h2 class="property-price mb-0" id="property-price">Loading...</h2>
+                        <h2 class="fs-1 fw-bold text-primary mb-0" id="property-price">Loading...</h2>
                         <div class="d-flex gap-2">
                             <button class="btn btn-outline-primary">
                                 <i class="fas fa-heart"></i> Save
@@ -54,18 +48,20 @@
                         </div>
                     </div>
 
-                    <div class="property-features-grid" id="property-features">
-                        <!-- Features will be loaded dynamically -->
+                    <div class="bg-light p-4 rounded mb-4">
+                        <div class="row g-3" id="property-features">
+                            <!-- Features will be loaded dynamically -->
+                        </div>
                     </div>
 
                     <div class="mb-4">
                         <h3 class="mb-3">Description</h3>
-                        <p id="property-description" class="property-description">Loading...</p>
+                        <p id="property-description" class="text-secondary lh-lg">Loading...</p>
                     </div>
 
                     <div class="mb-4">
                         <h3 class="mb-3">Features & Amenities</h3>
-                        <ul class="list-unstyled amenities-list" id="property-amenities">
+                        <ul class="list-unstyled" id="property-amenities">
                             <!-- Amenities will be loaded dynamically -->
                         </ul>
                     </div>
@@ -74,27 +70,28 @@
 
             <!-- Sidebar -->
             <div class="col-lg-4">
-                <!-- Agent Card -->
-                <div class="agent-card">
-                    <div class="text-center">
-                        <img src="assets/images/agent.jpg" alt="Agent" class="agent-image">
-                        <h4>Sarah Johnson</h4>
-                        <p class="text-muted">Senior Real Estate Specialist</p>
-                        <div class="d-flex justify-content-center gap-2 mb-3">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                        </div>
-                        <p class="text-muted mb-3">15+ years of experience in luxury real estate</p>
-                        <button class="btn btn-primary w-100">Contact Agent</button>
-                    </div>
+            <!-- Agent Card -->
+            <div class="bg-white p-4 rounded shadow-sm mb-4 text-center agent-card">
+                <img src="" alt="Agent" class="agent-image mb-3">
+                <h4></h4>
+                <p class="text-muted"></p>
+                <div class="d-flex justify-content-center gap-2 mb-3">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
                 </div>
+                <p class="text-muted mb-3"></p>
+                <div class="agent-contact mt-3">
+                    <!-- Contact details will be dynamically loaded here -->
+                </div>
+                <button class="btn btn-primary w-100">Contact Agent</button>
+            </div>
 
                 <!-- Contact Form -->
-                <div class="contact-form">
-                    <h3>Schedule a Visit</h3>
+                <div class="bg-white p-4 rounded shadow-sm">
+                    <h3 class="text-primary mb-4">Schedule a Visit</h3>
                     <form id="visit-form">
                         <div class="mb-3">
                             <input type="text" class="form-control" placeholder="Your Name" required>
@@ -117,7 +114,7 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="3" placeholder="Message (optional)"></textarea>
+                            <textarea class="form-control text-area" rows="3" placeholder="Message (optional)"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Schedule Visit</button>
                     </form>
@@ -131,78 +128,6 @@
     <script src="assets/js/all.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/header_footer.js"></script>
-    <script>
-        // Get property ID from URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const propertyId = parseInt(urlParams.get('id')) || 1;
-
-        // Fetch property data from JSON file
-        fetch('assets/js/properties.json')
-            .then(response => response.json())
-            .then(data => {
-                const property = data.properties.find(p => p.id === propertyId);
-                if (!property) {
-                    console.error('Property not found');
-                    return;
-                }
-
-                // Update page content
-                document.getElementById('property-title').textContent = property.title;
-                document.getElementById('property-price').textContent = property.price;
-                document.getElementById('property-description').textContent = property.description || 'No description available';
-
-                // Update features
-                const featuresGrid = document.getElementById('property-features');
-                property.features.forEach(feature => {
-                    featuresGrid.innerHTML += `
-                        <div class="feature-item">
-                            <i class="fas fa-${feature.icon}"></i>
-                            <span>${feature.text}</span>
-                        </div>
-                    `;
-                });
-
-                // Update amenities if available
-                const amenitiesList = document.getElementById('property-amenities');
-                if (property.amenities) {
-                    property.amenities.forEach(amenity => {
-                        amenitiesList.innerHTML += `
-                            <li>
-                                <i class="fas fa-check"></i>${amenity}
-                            </li>
-                        `;
-                    });
-                }
-
-                // Update images if available
-                if (property.images) {
-                    const mainImage = document.getElementById('mainImage');
-                    const thumbnailGallery = document.querySelector('.thumbnail-gallery');
-                    
-                    // Set main image
-                    mainImage.src = property.images[0];
-                    
-                    // Update thumbnails
-                    property.images.forEach((image, index) => {
-                        if (index === 0) return; // Skip first image as it's already set as main
-                        thumbnailGallery.innerHTML += `
-                            <img src="${image}" alt="Thumbnail ${index + 1}" onclick="changeMainImage(this.src)">
-                        `;
-                    });
-                }
-            })
-            .catch(error => console.error('Error loading property data:', error));
-
-        function changeMainImage(src) {
-            document.getElementById('mainImage').src = src;
-        }
-
-        // Handle form submission
-        document.getElementById('visit-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for scheduling a visit! Our agent will contact you shortly to confirm the appointment.');
-            this.reset();
-        });
-    </script>
+    <script src="assets/js/properties-details.js"></script>
 </body>
-</html> 
+</html>
