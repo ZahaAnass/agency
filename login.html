@@ -11,29 +11,35 @@
 <body>
     <loading-animation></loading-animation>
     <div class="container">
-        <div class="login-form">
-            <header>Login</header>
-            <form action="">
-                <div class="input-field">
-                    <input type="email" placeholder="Enter your email" required>
-                </div>
-                <div class="input-field">
-                    <input type="password" placeholder="Enter your password" required>
-                </div>
-                <div class="link">
-                    <a href="">Forgot password?</a>
-                </div>
-                <div class="input-field">
-                    <button type="submit">Login</button>
-                </div>
-                <div class="input-field text-center">
-                    <p>Don't have an account? <a href="signup.html">Signup</a></p>
-                </div>
-            </form>
+        <form action="">
+            <div class="title">Login</div>
+            <div class="input-box">
+                <input type="email" placeholder="Enter Your Email" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Enter Your Password" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box button">
+                <input type="submit" value="Continue">
+            </div>
+        </form>
+        <div class="option">or Connect with Social Media</div>
+        <div class="google">
+            <a href="#"><i class="fa-brands fa-google"></i>Login with twitter</a>
         </div>
+        <div class="apple">
+            <a href="#"><i class="fa-brands fa-apple"></i>Login with twitter</a>
+        </div>        
+        <div class="facebook">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook"></i>Login with Facebook</a>
+        </div>
+        <p class="link">Don't have an account yet? <br> <a href="signup.html">Create one</a></p>
     </div>
     <script type="module" src="assets/js/loading-module.js"></script>
     <script src="assets/js/loading.js"></script>
     <script src="assets/js/login_signup.js"></script>
+    <script src="https://kit.fontawesome.com/91687056a1.js" crossorigin="anonymous"></script>
 </body>
 </html>

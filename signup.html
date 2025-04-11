@@ -11,37 +11,47 @@
 <body>
     <loading-animation></loading-animation>
     <div class="container">
-        <div class="login-form">
-            <header>Login</header>
-            <form action="">
-                <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
-                </div>
-                <div class="input-field">
-                    <input type="email" placeholder="Enter your email" required>
-                </div>
-                <div class="input-field">
-                    <input type="tel" placeholder="Enter your phone number" required>
-                </div>
-                <div class="input-field">
-                    <input type="password" placeholder="Enter your password" required>
-                </div>
-                <div class="input-field">
-                    <input type="password" placeholder="Confirm your password" required>
-                </div>
-                <div class="link">
-                    <a href="">Forgot password?</a>
-                </div>
-                <div class="input-field">
-                    <button type="submit">Login</button>
-                </div>
-                <div class="input-field text-center">
-                    <p class="link">You already have an account? <a href="login.html">Login</a></p>
-                </div>
-            </form>
+        <form action="#">
+            <div class="title">Sign Up</div>
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Enter Your Email" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+                <input type="tel" placeholder="Enter your phone number" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Enter Your Password" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Your Password" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box button">
+                <input type="submit" value="Continue">
+            </div>
+        </form>
+        <div class="option">or Connect with Social Media</div>
+        <div class="google">
+            <a href="#"><i class="fa-brands fa-google"></i>Login with Google</a>
         </div>
-    </div>
+        <div class="apple">
+            <a href="#"><i class="fa-brands fa-apple"></i>Login with Apple</a>
+        </div>        
+        <div class="facebook">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook"></i>Login with Facebook</a>
+        </div>
+        <p class="link">You already have an account? <a href="login.html">Login</a></p>
+    </div>        
     <script src="assets/js/loading.js"></script>
     <script type="module" src="assets/js/loading-module.js"></script>
+    <script src="assets/js/login_signup.js"></script>
+    <script src="https://kit.fontawesome.com/91687056a1.js" crossorigin="anonymous"></script>
 </body>
 </html>
