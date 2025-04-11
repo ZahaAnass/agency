@@ -25,6 +25,17 @@ main {
     margin-bottom: 4rem;
 }
 
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Main Text Styling */
 .main-text h1 {
     font-size: 3.5rem;
     font-weight: 700;
@@ -32,10 +43,16 @@ main {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.main-text p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+@media (max-width: 768px) {
+    .main-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-text h1 {
+        font-size: 2rem;
+    }
 }
 
 /* Search Box */
@@ -201,10 +218,6 @@ main {
         height: 50vh;
     }
 
-    .main-text h1 {
-        font-size: 2.5rem;
-    }
-
     .main-text p {
         font-size: 1rem;
     }
@@ -229,10 +242,6 @@ main {
 }
 
 @media (max-width: 576px) {
-    .main-text h1 {
-        font-size: 2rem;
-    }
-
     .section-title h2 {
         font-size: 2rem;
     }
@@ -247,12 +256,19 @@ main {
     }
 }
 
-/* Animation */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+/* Card Animations */
+.property-card {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in-out forwards;
 }
 
-.fadeIn {
-    animation: fadeIn 0.5s ease-in-out forwards;
-}
+/* Stagger the animations for property cards */
+.property-card:nth-child(1) { animation-delay: 0.1s; }
+.property-card:nth-child(2) { animation-delay: 0.2s; }
+.property-card:nth-child(3) { animation-delay: 0.3s; }
+.property-card:nth-child(4) { animation-delay: 0.4s; }
+.property-card:nth-child(5) { animation-delay: 0.5s; }
+.property-card:nth-child(6) { animation-delay: 0.6s; }
+.property-card:nth-child(7) { animation-delay: 0.7s; }
+.property-card:nth-child(8) { animation-delay: 0.8s; }
+.property-card:nth-child(9) { animation-delay: 0.9s; }

@@ -7,6 +7,49 @@ main {
     background-size: cover;
     background-position: center;
 }
-/* .reason .topic{
-    line-height: 4rem;
-} */
+
+/* Card Animations */
+.service-card,
+.card {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+/* Stagger the animations for service cards */
+.service-card:nth-child(1), .card:nth-child(1) { animation-delay: 0.1s; }
+.service-card:nth-child(2), .card:nth-child(2) { animation-delay: 0.2s; }
+.service-card:nth-child(3), .card:nth-child(3) { animation-delay: 0.3s; }
+.service-card:nth-child(4), .card:nth-child(4) { animation-delay: 0.4s; }
+.service-card:nth-child(5), .card:nth-child(5) { animation-delay: 0.5s; }
+.service-card:nth-child(6), .card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Main Text Styling */
+.main-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .main-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-text h1 {
+        font-size: 2rem;
+    }
+}

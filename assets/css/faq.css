@@ -1,9 +1,29 @@
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 63vh;
-    background-image: url(../images/client-story.jpg);
-    background-size: cover;
-    background-position: center;
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Main Text Styling */
+.main-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .main-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-text h1 {
+        font-size: 2rem;
+    }
 }
