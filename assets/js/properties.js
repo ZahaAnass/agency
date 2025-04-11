@@ -4,7 +4,7 @@ let propertiesPerPage = 6;
 let currentFilter = 'all';
 
 // Fetch properties data
-fetch('assets/js/properties.json')
+fetch('assets/data/properties-data.json')
     .then(response => response.json())
     .then(data => {
         propertiesData = data;

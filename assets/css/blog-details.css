@@ -1,0 +1,32 @@
+:root{
+    --dark-color: #19283f;
+    --yellow-color: #ffc400;
+}
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe input[type="text"]:focus{
+    outline: none;
+}
+.subscribe input[type="text"]::placeholder{
+    color: white;
+}
+.subscribe input[type="submit"]{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+.breadcrumb {
+    background: transparent;
+    padding-top: 2rem;
+}
+.breadcrumb-item a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+.breadcrumb-item.active {
+    color: #6c757d;
+}

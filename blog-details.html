@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Details - Real Estate Agency</title>
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="assets/icons/all.min.css">
+    <!-- My Css -->
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/blog-details.css">
+</head>
+<body>
+    <special-header></special-header>
+
+    <main class="container mt-5">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item"><a href="blog.html" class="text-decoration-none">Blog</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
+            </ol>
+        </nav>
+
+        <div class="row g-4">
+            <!-- Blog Post Content -->
+            <div class="col-lg-8">
+                <div class="bg-white p-4 rounded shadow-sm">
+                    <h1 class="display-5 fw-bold mb-4" id="post-title">Loading...</h1>
+                    
+                    <!-- Post Meta -->
+                    <div class="post-meta mb-4">
+                        <span class="me-3"><i class="fas fa-calendar-alt me-2"></i><span id="post-date">Loading...</span></span>
+                        <span class="me-3"><i class="fas fa-clock me-2"></i><span id="read-time">Loading...</span></span>
+                        <span><i class="fas fa-folder me-2"></i><span id="post-category">Loading...</span></span>
+                    </div>
+
+                    <!-- Main Image -->
+                    <div class="mb-4">
+                        <img src="" alt="Blog Post Image" id="post-image" class="w-100 rounded shadow-sm">
+                    </div>
+
+                    <!-- Introduction -->
+                    <div class="mb-4">
+                        <p id="post-introduction" class="lead">Loading...</p>
+                    </div>
+
+                    <!-- Content Sections -->
+                    <div id="post-content" class="mb-4">
+                        <!-- Sections will be loaded dynamically -->
+                    </div>
+
+                    <!-- Conclusion -->
+                    <div class="mb-4">
+                        <p id="post-conclusion" class="border-start border-primary border-3 ps-3">Loading...</p>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="mb-4">
+                        <h5>Tags:</h5>
+                        <div id="post-tags" class="d-flex flex-wrap justify-content-center gap-2">
+                            <!-- Tags will be loaded dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Author Card -->
+                <div class="bg-white p-4 rounded shadow-sm">
+                    <div class="text-center">
+                        <img src="" alt="Author" id="author-image" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                        <h4 id="author-name">Loading...</h4>
+                        <p class="text-muted" id="author-role">Loading...</p>
+                        <p class="text-muted" id="author-bio">Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Subscribe Section -->
+    <div class="subscribe pt-5 pb-5 text-center text-md-start mt-5">
+        <div class="container">
+            <form class="row align-items-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="fw-bold fs-5 mb-3">Get More Insights:</div>
+                </div>
+                <div class="col-md-6 col-lg-7 mb-3 email">
+                    <input type="text" placeholder="Your professional email" class="w-100 text-light p-2 bg-transparent">
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <input type="submit" value="Subscribe" class="btn rounded-pill">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <special-footer></special-footer>
+
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/header_footer.js"></script>
+    <script src="assets/js/blog-details.js"></script>
+</body>
+</html>

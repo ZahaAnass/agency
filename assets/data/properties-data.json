@@ -1,0 +1,663 @@
+{
+    "properties": [
+        {
+            "id": 1,
+            "title": "Modern Apartment in New York",
+            "price": "$450,000",
+            "location": "Manhattan, New York",
+            "type": "apartment",
+            "image": "assets/images/property-1.jpg",
+            "description": "This modern apartment in Manhattan offers the perfect blend of comfort and style. The open-concept living area features floor-to-ceiling windows with stunning city views. The kitchen is equipped with stainless steel appliances and granite countertops. The master bedroom includes a walk-in closet and en-suite bathroom. Building amenities include a fitness center, rooftop deck, and 24/7 security.",
+            "features": [
+                { "icon": "bed", "text": "3 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "1,200 sqft" }
+            ],
+            "amenities": [
+                "Floor-to-ceiling windows",
+                "Stainless steel appliances",
+                "Granite countertops",
+                "Walk-in closet",
+                "En-suite bathroom",
+                "Fitness center",
+                "Rooftop deck",
+                "24/7 security",
+                "Central air conditioning",
+                "In-unit laundry"
+            ],
+            "agent": {
+                "name": "Sarah Johnson",
+                "title": "Senior Real Estate Specialist",
+                "image": "assets/images/property-agent-1.jpg",
+                "rating": 5,
+                "experience": "15+ years of experience in luxury real estate",
+                "phone": "+1 (212) 555-1234",
+                "email": "sarah.johnson@realestate.com"
+            }
+        },
+        {
+            "id": 2,
+            "title": "Spacious Family Home",
+            "price": "$750,000",
+            "location": "Beverly Hills, Los Angeles",
+            "type": "house",
+            "image": "assets/images/property-2.jpg",
+            "description": "This spacious family home in Beverly Hills offers luxurious living with modern amenities. The property features a grand entrance, formal living and dining rooms, and a gourmet kitchen with custom cabinetry. The master suite includes a private balcony and spa-like bathroom. The backyard features a pool, outdoor kitchen, and multiple entertainment areas.",
+            "features": [
+                { "icon": "bed", "text": "4 Bedrooms" },
+                { "icon": "bath", "text": "3 Bathrooms" },
+                { "icon": "ruler-combined", "text": "2,400 sqft" }
+            ],
+            "amenities": [
+                "Grand entrance",
+                "Formal living and dining rooms",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "Private balcony",
+                "Spa-like bathroom",
+                "Swimming pool",
+                "Outdoor kitchen",
+                "Entertainment areas",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Michael Rodriguez",
+                "title": "Luxury Property Specialist",
+                "image": "assets/images/property-agent-2.jpg",
+                "rating": 5,
+                "experience": "12+ years of experience in high-end real estate",
+                "phone": "+1 (310) 555-5678",
+                "email": "michael.rodriguez@realestate.com"
+            }
+        },
+        {
+            "id": 3,
+            "title": "Luxury Waterfront Villa",
+            "price": "$1,200,000",
+            "location": "South Beach, Miami",
+            "type": "villa",
+            "image": "assets/images/property-3.jpg",
+            "description": "This stunning waterfront villa in South Beach offers the ultimate in luxury living. The property features direct beach access, panoramic ocean views, and an infinity pool. The open-concept living areas flow seamlessly to outdoor spaces. The gourmet kitchen includes custom cabinetry and top-of-the-line appliances. The master suite features a private balcony with ocean views.",
+            "features": [
+                { "icon": "bed", "text": "5 Bedrooms" },
+                { "icon": "bath", "text": "4 Bathrooms" },
+                { "icon": "ruler-combined", "text": "3,500 sqft" }
+            ],
+            "amenities": [
+                "Direct beach access",
+                "Panoramic ocean views",
+                "Infinity pool",
+                "Open-concept living areas",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "Top-of-the-line appliances",
+                "Private balcony",
+                "Outdoor entertainment areas",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Emily Chen",
+                "title": "Waterfront Property Expert",
+                "image": "assets/images/property-agent-3.jpg",
+                "rating": 5,
+                "experience": "10+ years specializing in waterfront properties",
+                "phone": "+1 (305) 555-9012",
+                "email": "emily.chen@realestate.com"
+            }
+        },
+        {
+            "id": 4,
+            "title": "Downtown Luxury Condo",
+            "price": "$520,000",
+            "location": "Loop, Chicago",
+            "type": "condo",
+            "image": "assets/images/property-4.jpg",
+            "description": "This sophisticated downtown condo in Chicago's Loop district offers modern urban living at its finest. The unit features high ceilings, hardwood floors, and floor-to-ceiling windows with stunning city views. The kitchen boasts quartz countertops and premium appliances. Building amenities include a 24-hour doorman, fitness center, and rooftop lounge with panoramic city views.",
+            "features": [
+                { "icon": "bed", "text": "2 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "1,100 sqft" }
+            ],
+            "amenities": [
+                "High ceilings",
+                "Hardwood floors",
+                "Floor-to-ceiling windows",
+                "City views",
+                "Quartz countertops",
+                "Premium appliances",
+                "24-hour doorman",
+                "Fitness center",
+                "Rooftop lounge",
+                "In-unit laundry",
+                "Central air conditioning"
+            ],
+                "agent": {
+                    "name": "James Wilson",
+                    "title": "Urban Properties Specialist",
+                    "image": "assets/images/property-agent-4.jpg",
+                    "rating": 4.5,
+                    "experience": "8+ years specializing in downtown properties",
+                    "phone": "+1 (312) 555-3456",
+                    "email": "james.wilson@realestate.com"
+                }
+        },
+        {
+            "id": 5,
+            "title": "Modern House with Garden",
+            "price": "$680,000",
+            "location": "Queen Anne, Seattle",
+            "type": "house",
+            "image": "assets/images/property-5.jpg",
+            "description": "This contemporary home in Queen Anne combines modern design with Pacific Northwest charm. The property features an open floor plan, custom built-ins, and a chef's kitchen with marble countertops. The master suite offers a private deck with city views. The landscaped garden includes native plants, a water feature, and multiple seating areas perfect for outdoor entertaining.",
+            "features": [
+                { "icon": "bed", "text": "3 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "1,800 sqft" }
+            ],
+            "amenities": [
+                "Open floor plan",
+                "Custom built-ins",
+                "Chef's kitchen",
+                "Marble countertops",
+                "Private deck",
+                "City views",
+                "Landscaped garden",
+                "Native plants",
+                "Water feature",
+                "Outdoor seating areas"
+            ],
+            "agent": {
+                "name": "Olivia Martinez",
+                "title": "Contemporary Home Expert",
+                "image": "assets/images/property-agent-5.jpg",
+                "rating": 4.8,
+                "experience": "10+ years in residential real estate",
+                "phone": "+1 (206) 555-7890",
+                "email": "olivia.martinez@realestate.com"
+            }
+        },
+        {
+            "id": 6,
+            "title": "Cozy Studio Apartment",
+            "price": "$380,000",
+            "location": "Brooklyn, New York",
+            "type": "apartment",
+            "image": "assets/images/property-6.jpg",
+            "description": "This thoughtfully designed studio apartment in Brooklyn maximizes space and functionality. The unit features custom built-in storage, a Murphy bed, and a modern kitchen with stainless steel appliances. Large windows provide natural light and city views. The building offers a rooftop garden, bike storage, and a package receiving service.",
+            "features": [
+                { "icon": "bed", "text": "1 Bedroom" },
+                { "icon": "bath", "text": "1 Bathroom" },
+                { "icon": "ruler-combined", "text": "650 sqft" }
+            ],
+            "amenities": [
+                "Custom built-in storage",
+                "Murphy bed",
+                "Modern kitchen",
+                "Stainless steel appliances",
+                "Large windows",
+                "Natural light",
+                "City views",
+                "Rooftop garden",
+                "Bike storage",
+                "Package receiving service"
+            ],
+            "agent": {
+                "name": "David Kim",
+                "title": "Urban Living Specialist",
+                "image": "assets/images/property-agent-6.jpg",
+                "rating": 4.7,
+                "experience": "7+ years experience in NYC apartments",
+                "phone": "+1 (718) 555-2345",
+                "email": "david.kim@realestate.com"
+            }
+        },
+        {
+            "id": 7,
+            "title": "Luxury Penthouse Suite",
+            "price": "$1,500,000",
+            "location": "Downtown Miami",
+            "type": "condo",
+            "image": "assets/images/property-7.jpg",
+            "description": "This spectacular penthouse suite offers the pinnacle of luxury living in downtown Miami. The residence features soaring ceilings, premium finishes, and wraparound balconies with breathtaking city and ocean views. The gourmet kitchen includes custom cabinetry and high-end appliances. The master suite features a private terrace and spa-like bathroom. Building amenities include a private beach club, infinity pool, and 24-hour concierge service.",
+            "features": [
+                { "icon": "bed", "text": "3 Bedrooms" },
+                { "icon": "bath", "text": "3.5 Bathrooms" },
+                { "icon": "ruler-combined", "text": "2,800 sqft" }
+            ],
+            "amenities": [
+                "Soaring ceilings",
+                "Premium finishes",
+                "Wraparound balconies",
+                "City and ocean views",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "High-end appliances",
+                "Private terrace",
+                "Spa-like bathroom",
+                "Private beach club",
+                "Infinity pool",
+                "24-hour concierge service"
+            ],
+            "agent": {
+                "name": "Sophia Reynolds",
+                "title": "Luxury Penthouse Expert",
+                "image": "assets/images/property-agent-7.jpg",
+                "rating": 5,
+                "experience": "15+ years in high-end condominium sales",
+                "phone": "+1 (305) 555-6789",
+                "email": "sophia.reynolds@realestate.com"
+            }
+        },
+        {
+            "id": 8,
+            "title": "Beachfront Villa",
+            "price": "$2,200,000",
+            "location": "Malibu, California",
+            "type": "villa",
+            "image": "assets/images/property-8.jpg",
+            "description": "This exquisite beachfront villa in Malibu offers the ultimate coastal living experience. The property features direct beach access, panoramic ocean views, and multiple outdoor living spaces. The gourmet kitchen opens to a covered patio with an outdoor kitchen. The master suite includes a private balcony and luxurious bathroom with ocean views. Additional features include a wine cellar, home theater, and infinity pool overlooking the Pacific.",
+            "features": [
+                { "icon": "bed", "text": "4 Bedrooms" },
+                { "icon": "bath", "text": "3 Bathrooms" },
+                { "icon": "ruler-combined", "text": "3,200 sqft" }
+            ],
+            "amenities": [
+                "Direct beach access",
+                "Panoramic ocean views",
+                "Multiple outdoor living spaces",
+                "Gourmet kitchen",
+                "Covered patio",
+                "Outdoor kitchen",
+                "Private balcony",
+                "Luxurious bathroom",
+                "Wine cellar",
+                "Home theater",
+                "Infinity pool",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Alexander Grant",
+                "title": "Coastal Property Specialist",
+                "image": "assets/images/property-agent-8.jpg",
+                "rating": 5,
+                "experience": "18+ years selling luxury waterfront homes",
+                "phone": "+1 (310) 555-9012",
+                "email": "alexander.grant@realestate.com"
+            }
+        },
+        {
+            "id": 9,
+            "title": "Historic Townhouse",
+            "price": "$950,000",
+            "location": "Georgetown, Washington DC",
+            "type": "townhouse",
+            "image": "assets/images/property-9.jpg",
+            "description": "This meticulously restored historic townhouse in Georgetown combines classic architecture with modern amenities. The property features original hardwood floors, crown molding, and a grand staircase. The updated kitchen includes custom cabinetry and marble countertops. The master suite offers a private balcony and renovated bathroom. The garden level includes a family room and wine cellar.",
+            "features": [
+                { "icon": "bed", "text": "4 Bedrooms" },
+                { "icon": "bath", "text": "3 Bathrooms" },
+                { "icon": "ruler-combined", "text": "2,600 sqft" }
+            ],
+            "amenities": [
+                "Original hardwood floors",
+                "Crown molding",
+                "Grand staircase",
+                "Updated kitchen",
+                "Custom cabinetry",
+                "Marble countertops",
+                "Private balcony",
+                "Renovated bathroom",
+                "Family room",
+                "Wine cellar",
+                "Garden level",
+                "Historic architecture"
+            ],
+            "agent": {
+                "name": "Isabella Thompson",
+                "title": "Historic Home Expert",
+                "image": "assets/images/property-agent-9.jpg",
+                "rating": 4.9,
+                "experience": "12+ years specializing in historic properties",
+                "phone": "+1 (202) 555-3456",
+                "email": "isabella.thompson@realestate.com"
+            }
+        },
+        {
+            "id": 10,
+            "title": "Modern Loft Apartment",
+            "price": "$620,000",
+            "location": "SoHo, New York",
+            "type": "apartment",
+            "image": "assets/images/property-10.jpg",
+            "description": "This stunning loft apartment in SoHo features soaring ceilings, exposed brick walls, and original hardwood floors. The open-concept living space includes a gourmet kitchen with custom cabinetry and high-end appliances. The master bedroom features a walk-in closet and en-suite bathroom. The building offers a fitness center, rooftop terrace, and 24-hour doorman service.",
+            "features": [
+                { "icon": "bed", "text": "2 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "1,500 sqft" }
+            ],
+            "amenities": [
+                "Soaring ceilings",
+                "Exposed brick walls",
+                "Original hardwood floors",
+                "Open-concept living space",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "High-end appliances",
+                "Walk-in closet",
+                "En-suite bathroom",
+                "Fitness center",
+                "Rooftop terrace",
+                "24-hour doorman service"
+            ],
+            "agent": {
+                "name": "Noah Parker",
+                "title": "Manhattan Loft Specialist",
+                "image": "assets/images/property-agent-10.jpg",
+                "rating": 4.8,
+                "experience": "9+ years in SoHo and Tribeca properties",
+                "phone": "+1 (212) 555-7890",
+                "email": "noah.parker@realestate.com"
+            }
+        },
+        {
+            "id": 11,
+            "title": "Mountain View Estate",
+            "price": "$1,800,000",
+            "location": "Aspen, Colorado",
+            "type": "house",
+            "image": "assets/images/property-11.jpg",
+            "description": "This magnificent mountain estate in Aspen offers unparalleled views and luxury living. The property features a grand great room with floor-to-ceiling windows overlooking the mountains. The gourmet kitchen includes custom cabinetry and a large center island. The master suite offers a private balcony and spa-like bathroom. Additional features include a wine cellar, home theater, and heated outdoor pool with mountain views.",
+            "features": [
+                { "icon": "bed", "text": "5 Bedrooms" },
+                { "icon": "bath", "text": "4 Bathrooms" },
+                { "icon": "ruler-combined", "text": "4,200 sqft" }
+            ],
+            "amenities": [
+                "Grand great room",
+                "Floor-to-ceiling windows",
+                "Mountain views",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "Large center island",
+                "Private balcony",
+                "Spa-like bathroom",
+                "Wine cellar",
+                "Home theater",
+                "Heated outdoor pool",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Victoria Hughes",
+                "title": "Mountain Estate Expert",
+                "image": "assets/images/property-agent-11.jpg",
+                "rating": 5,
+                "experience": "14+ years in luxury alpine properties",
+                "phone": "+1 (970) 555-2345",
+                "email": "victoria.hughes@realestate.com"
+            }
+        },
+        {
+            "id": 12,
+            "title": "Luxury Beachfront Condo",
+            "price": "$1,100,000",
+            "location": "San Diego, California",
+            "type": "condo",
+            "image": "assets/images/property-12.jpg",
+            "description": "This sophisticated beachfront condo in San Diego offers the perfect blend of luxury and coastal living. The unit features floor-to-ceiling windows with panoramic ocean views, premium finishes, and an open-concept living area. The gourmet kitchen includes custom cabinetry and high-end appliances. The master suite offers a private balcony and spa-like bathroom. Building amenities include a private beach access, pool, and fitness center.",
+            "features": [
+                { "icon": "bed", "text": "2 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "1,800 sqft" }
+            ],
+            "amenities": [
+                "Floor-to-ceiling windows",
+                "Panoramic ocean views",
+                "Premium finishes",
+                "Open-concept living area",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "High-end appliances",
+                "Private balcony",
+                "Spa-like bathroom",
+                "Private beach access",
+                "Pool",
+                "Fitness center"
+            ],
+            "agent": {
+                "name": "Benjamin Foster",
+                "title": "Coastal Luxury Specialist",
+                "image": "assets/images/property-agent-12.jpg",
+                "rating": 4.9,
+                "experience": "11+ years in Southern California real estate",
+                "phone": "+1 (619) 555-6789",
+                "email": "benjamin.foster@realestate.com"
+            }
+        },
+        {
+            "id": 13,
+            "title": "Modern Villa with Pool",
+            "price": "$2,500,000",
+            "location": "Scottsdale, Arizona",
+            "type": "villa",
+            "image": "assets/images/property-13.jpg",
+            "description": "This contemporary villa in Scottsdale offers resort-style living with modern amenities. The property features an open floor plan, high ceilings, and floor-to-ceiling windows with mountain views. The gourmet kitchen includes custom cabinetry and premium appliances. The master suite offers a private balcony and spa-like bathroom. The backyard features a resort-style pool, outdoor kitchen, and multiple entertainment areas.",
+            "features": [
+                { "icon": "bed", "text": "5 Bedrooms" },
+                { "icon": "bath", "text": "4 Bathrooms" },
+                { "icon": "ruler-combined", "text": "4,500 sqft" }
+            ],
+            "amenities": [
+                "Open floor plan",
+                "High ceilings",
+                "Floor-to-ceiling windows",
+                "Mountain views",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "Premium appliances",
+                "Private balcony",
+                "Spa-like bathroom",
+                "Resort-style pool",
+                "Outdoor kitchen",
+                "Multiple entertainment areas",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Ava Richardson",
+                "title": "Desert Luxury Expert",
+                "image": "assets/images/property-agent-13.jpg",
+                "rating": 5,
+                "experience": "13+ years in Arizona luxury real estate",
+                "phone": "+1 (480) 555-9012",
+                "email": "ava.richardson@realestate.com"
+            }
+        },
+        {
+            "id": 14,
+            "title": "Downtown Apartment",
+            "price": "$480,000",
+            "location": "Boston, Massachusetts",
+            "type": "apartment",
+            "image": "assets/images/property-14.jpg",
+            "description": "This stylish downtown apartment in Boston offers modern living in a historic setting. The unit features hardwood floors, custom built-ins, and a modern kitchen with granite countertops. The master bedroom includes a walk-in closet and renovated bathroom. Building amenities include a fitness center, rooftop deck with city views, and 24-hour concierge service.",
+            "features": [
+                { "icon": "bed", "text": "2 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "1,200 sqft" }
+            ],
+            "amenities": [
+                "Hardwood floors",
+                "Custom built-ins",
+                "Modern kitchen",
+                "Granite countertops",
+                "Walk-in closet",
+                "Renovated bathroom",
+                "Fitness center",
+                "Rooftop deck",
+                "City views",
+                "24-hour concierge service",
+                "In-unit laundry",
+                "Central air conditioning"
+            ],
+            "agent": {
+                "name": "Ethan Brooks",
+                "title": "Boston Urban Specialist",
+                "image": "assets/images/property-agent-14.jpg",
+                "rating": 4.8,
+                "experience": "9+ years in downtown Boston properties",
+                "phone": "+1 (617) 555-3456",
+                "email": "ethan.brooks@realestate.com"
+            }
+            
+        },
+        {
+            "id": 15,
+            "title": "Luxury Townhouse",
+            "price": "$850,000",
+            "location": "San Francisco, California",
+            "type": "townhouse",
+            "image": "assets/images/property-15.jpg",
+            "description": "This elegant townhouse in San Francisco offers sophisticated living with modern amenities. The property features high ceilings, custom built-ins, and a gourmet kitchen with marble countertops. The master suite includes a private balcony and spa-like bathroom. The garden level features a family room and wine cellar. Additional features include a private rooftop deck with city views.",
+            "features": [
+                { "icon": "bed", "text": "3 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "2,000 sqft" }
+            ],
+            "amenities": [
+                "High ceilings",
+                "Custom built-ins",
+                "Gourmet kitchen",
+                "Marble countertops",
+                "Private balcony",
+                "Spa-like bathroom",
+                "Family room",
+                "Wine cellar",
+                "Garden level",
+                "Private rooftop deck",
+                "City views",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Madison Clark",
+                "title": "Bay Area Townhouse Expert",
+                "image": "assets/images/property-agent-15.jpg",
+                "rating": 4.9,
+                "experience": "10+ years in San Francisco real estate",
+                "phone": "+1 (415) 555-7890",
+                "email": "madison.clark@realestate.com"
+            }
+        },
+        {
+            "id": 16,
+            "title": "Modern House with Garden",
+            "price": "$1,200,000",
+            "location": "Austin, Texas",
+            "type": "house",
+            "image": "assets/images/property-16.jpg",
+            "description": "This contemporary home in Austin offers modern living with Texas charm. The property features an open floor plan, custom built-ins, and a gourmet kitchen with quartz countertops. The master suite includes a private balcony and spa-like bathroom. The backyard features a pool, outdoor kitchen, and multiple entertainment areas. Additional features include a home office and media room.",
+            "features": [
+                { "icon": "bed", "text": "4 Bedrooms" },
+                { "icon": "bath", "text": "3 Bathrooms" },
+                { "icon": "ruler-combined", "text": "2,800 sqft" }
+            ],
+            "amenities": [
+                "Open floor plan",
+                "Custom built-ins",
+                "Gourmet kitchen",
+                "Quartz countertops",
+                "Private balcony",
+                "Spa-like bathroom",
+                "Swimming pool",
+                "Outdoor kitchen",
+                "Multiple entertainment areas",
+                "Home office",
+                "Media room",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Jackson Miller",
+                "title": "Austin Luxury Specialist",
+                "image": "assets/images/property-agent-16.jpg",
+                "rating": 4.8,
+                "experience": "8+ years in Texas luxury properties",
+                "phone": "+1 (512) 555-2345",
+                "email": "jackson.miller@realestate.com"
+            }
+        },
+        {
+            "id": 17,
+            "title": "Luxury Beach Villa",
+            "price": "$3,200,000",
+            "location": "Maui, Hawaii",
+            "type": "villa",
+            "image": "assets/images/property-17.jpg",
+            "description": "This spectacular beach villa in Maui offers the ultimate in tropical luxury living. The property features direct beach access, panoramic ocean views, and multiple outdoor living spaces. The gourmet kitchen includes custom cabinetry and high-end appliances. The master suite offers a private balcony and luxurious bathroom with ocean views. Additional features include a wine cellar, home theater, and infinity pool overlooking the Pacific.",
+            "features": [
+                { "icon": "bed", "text": "5 Bedrooms" },
+                { "icon": "bath", "text": "4 Bathrooms" },
+                { "icon": "ruler-combined", "text": "4,800 sqft" }
+            ],
+            "amenities": [
+                "Direct beach access",
+                "Panoramic ocean views",
+                "Multiple outdoor living spaces",
+                "Gourmet kitchen",
+                "Custom cabinetry",
+                "High-end appliances",
+                "Private balcony",
+                "Luxurious bathroom",
+                "Wine cellar",
+                "Home theater",
+                "Infinity pool",
+                "Smart home system"
+            ],
+            "agent": {
+                "name": "Zoe Tanaka",
+                "title": "Hawaiian Luxury Expert",
+                "image": "assets/images/property-agent-17.jpg",
+                "rating": 5,
+                "experience": "15+ years specializing in Hawaiian villas",
+                "phone": "+1 (808) 555-6789",
+                "email": "zoe.tanaka@realestate.com"
+            }
+        },
+        {
+            "id": 18,
+            "title": "Modern Downtown Condo",
+            "price": "$780,000",
+            "location": "Denver, Colorado",
+            "type": "condo",
+            "image": "assets/images/property-18.jpg",
+            "description": "This sophisticated downtown condo in Denver offers modern urban living at its finest. The unit features high ceilings, hardwood floors, and floor-to-ceiling windows with stunning city and mountain views. The kitchen boasts quartz countertops and premium appliances. Building amenities include a 24-hour doorman, fitness center, and rooftop lounge with panoramic views of the Rocky Mountains.",
+            "features": [
+                { "icon": "bed", "text": "2 Bedrooms" },
+                { "icon": "bath", "text": "2 Bathrooms" },
+                { "icon": "ruler-combined", "text": "1,600 sqft" }
+            ],
+            "amenities": [
+                "High ceilings",
+                "Hardwood floors",
+                "Floor-to-ceiling windows",
+                "City and mountain views",
+                "Quartz countertops",
+                "Premium appliances",
+                "24-hour doorman",
+                "Fitness center",
+                "Rooftop lounge",
+                "Rocky Mountain views",
+                "In-unit laundry",
+                "Central air conditioning"
+            ],
+            "agent": {
+                "name": "Lucas Bennett",
+                "title": "Denver Urban Specialist",
+                "image": "assets/images/property-agent-18.jpg",
+                "rating": 4.8,
+                "experience": "7+ years in Colorado urban properties",
+                "phone": "+1 (303) 555-9012",
+                "email": "lucas.bennett@realestate.com"
+            }
+        }
+    ],
+    "totalProperties": 18,
+    "propertiesPerPage": 6
+} 
