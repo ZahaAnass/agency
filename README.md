@@ -82,4 +82,3 @@ Contributions are what make the open source community such an amazing place to l
 - [Bootstrap](https://getbootstrap.com/)
 - [Font Awesome](https://fontawesome.com/)
 - [Lottie](https://lottiefiles.com/)
-
